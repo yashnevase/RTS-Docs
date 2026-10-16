@@ -34,10 +34,11 @@ Use Godot for the main build after a small engine validation slice. Do not imple
 
 Timings are intentionally not promised yet. Scope and the available work schedule are not established well enough for honest estimates.
 
-## Scope controls
+## Scope and scale controls
 
-- Separate the dream-game map from the first playable map/content set.
-- Prefer simplified aggregate simulation for distant or irrelevant locations if that meets the desired world feel.
+- Preserve the large fixed-map ambition. A vertical slice is a small test of the systems, not a decision to shrink the intended world.
+- Reuse the same entity schemas and simulation rules across the map. Prove that new places and lords can be defined mostly through data rather than bespoke code.
+- Evaluate cheaper update cadences or aggregate calculations for distant entities only as performance techniques; they must still react consistently to world conditions and remain part of the same living world.
 - Add a resource/building/stat only when it creates a decision worth the complexity.
 - Test any new system with a concrete player scenario and edge cases.
 - Do not call the game ready because it compiles; require a playable, repeatable loop and defined quality bar.
