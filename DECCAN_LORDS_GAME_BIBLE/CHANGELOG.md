@@ -18,3 +18,11 @@
 - Added open tension between long-session sandbox play and short competitive modes.
 - Preserved the India-wide aspiration while explicitly recording launch map scope as open.
 - Updated decision log with workflow, game identity and launch questions. Markdown remains canonical; exported DOCX/PDF/XLSX are historical v0.1 snapshots.
+
+
+## v0.3 — 2026-10-16 — Large fixed world and reusable simulation model
+
+- Clarified that the desired world is a large fixed/researched strategic map, with major locations from Delhi toward Kanyakumari; it is not a randomly generated geography.
+- Added the shared-engine model: entities reuse common rules while different data for culture, traits, geography, population, resources, rank, ambitions, relationships, armies and circumstances creates varied behavior.
+- Clarified that map scale and simulation detail are separate questions. Performance/detail levels should be tested, not used as a pretext to automatically shrink the intended world.
+- Kept exact location roster, historical date, detail tiers and technical implementation OPEN.
