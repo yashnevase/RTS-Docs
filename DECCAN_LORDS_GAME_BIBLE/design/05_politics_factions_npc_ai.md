@@ -6,6 +6,12 @@ The player begins as a local hereditary lord in a hierarchy of overlapping clan,
 
 The exact number and names of political levels are OPEN. The game should not force a single linear promotion path if the player can become a rival, mercenary or outlaw.
 
+## High-level agreement: mixed noble-service arrangements
+
+**LOCKED at the structural level only:** noble authority and revenue arrangements should be able to vary with kingdom/institution, rank, circumstances and the ruler's policy. Do not force every noble into one universal salary model or one universal land/revenue model. A single relationship may combine several components, such as salary, authority to administer territory, revenue rights, remittance, privileges and military/service duties.
+
+This does **not** lock the historic names, the legal meaning of landholding, who owns or appoints what, numerical shares, rank ladders, or any particular period's institutions. Those remain OPEN until the start date and historical context are researched.
+
 ## Reusable entities, different outcomes
 
 The world should use a common simulation engine rather than bespoke implementations for each lord, clan, kingdom or faction. Variety comes from combinations of:
