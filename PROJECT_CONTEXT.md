@@ -70,4 +70,4 @@ Have a long, iterative design conversation. The user will share game details in 
 - `AGENTS.md` describes how coding agents must work.
 
 ## Current next design subject
-Continue the user's opening story and first playable flow in small steps: exact opening moment, initial holdings, people, father/clan legacy, ruler relationship, allies/rivals, immediate need/threat, and the first choices. Do not settle specifics before the user explains their vision.
+First define the core player loop and relationship between the long-running campaign sandbox and possible competitive skirmish play. Ask what the player is actively doing in an ordinary 10–15 minute stretch, what decisions create tension when no battle occurs, and what actions feel satisfying. Then discuss the broad historical starting date and faction state; only after that construct the faction/culture/attribute chart using the user's data plus sourced historical checks. Continue the inheritance story and initial holdings after the recurring player loop is clear. Do not force the user to answer every open question at once, and do not convert the recommendation into a locked decision without explicit agreement.
