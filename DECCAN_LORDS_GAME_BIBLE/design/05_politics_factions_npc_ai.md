@@ -6,6 +6,19 @@ The player begins as a local hereditary lord in a hierarchy of overlapping clan,
 
 The exact number and names of political levels are OPEN. The game should not force a single linear promotion path if the player can become a rival, mercenary or outlaw.
 
+## Reusable entities, different outcomes
+
+The world should use a common simulation engine rather than bespoke implementations for each lord, clan, kingdom or faction. Variety comes from combinations of:
+
+- **Role and authority:** local noble, clan leader, governor, Sultan/king, emperor, civic or religious authority where relevant, mercenary leader, bandit chief, companion.
+- **Personal traits:** ambition, risk tolerance, caution, greed, generosity, trustworthiness, pride, patience and military confidence—only where each trait creates a distinguishable effect.
+- **Interests and goals:** protect a holding, gain rank, accumulate wealth, serve an overlord, expand, defend a community, gain independence, avenge an insult or replace a superior.
+- **Context:** geography, climate, roads and passes, local resources, population, treasury, army, supply, allies, threats, current wars and available opportunities.
+- **Relationships and history:** clan ties, overlord/vassal links, promises, gifts, betrayals, favors, grudges, past outcomes and confidence in information.
+- **Culture and faction profile:** names, appearance, colors, architecture, relevant customs, institutions, military traditions and diplomacy preferences supported by research.
+
+The same underlying decision framework can therefore produce different outcomes from different data. Avoid creating a unique hard-coded AI for every named character. Use reusable templates, profiles, relationship links and shared rules; reserve scripted exceptions for specific authored scenarios and document their purpose.
+
 ## Relationships
 
 Candidate relationship dimensions:
