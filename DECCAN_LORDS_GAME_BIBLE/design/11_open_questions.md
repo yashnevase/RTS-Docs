@@ -54,6 +54,23 @@ These are prompts, not a questionnaire the user must answer all at once. Work th
 35. How should warfare, captivity, looting, slavery, religious institutions and civilian harm be represented in tone and age rating?
 36. What level of historical fidelity is desired when it conflicts with strategic balance or player freedom?
 
+## I. Connected economy, politics and military recovery
+
+37. Which rights come with a noble's appointment: salary, land administration, tax/revenue collection, retained income after remitting a share, privileges, troop duties, or combinations?
+38. Who sets a lord's obligations, and how can a ruler increase, negotiate, revoke or reassign them? What follows excellent service, partial performance or failure?
+39. Which holdings are inherited, granted, administered for a superior, owned outright or occupied by force? How does that distinction affect succession, taxation and changing allegiance?
+40. What state should a persistent merchant track: capital, inventory, routes, credit, partners, debts, friendships, rivalries and rumours? Which is essential in the first prototype?
+41. What governs loan size, fee/interest, deadline, collateral where appropriate, repayment, default, negotiation and consequences? Can a merchant ask a connected noble for help collecting a debt?
+42. Should initial market prices be fixed by region, updated in supply/demand bands, or calculated from local inventories and transport costs?
+43. Which production facilities and chains matter first, and how should soil, rainfall, terrain, water, forest, ore, labour and roads constrain them?
+44. How do warehouses differ in capacity, security and access? Can stock be reserved for households, markets, armies or contracts?
+45. Which household needs trigger upgrades, and when do prosperous new families arrive? How should growth balance food, jobs, housing, services and labour?
+46. Which recovery factors matter for civilians and troops: time, safety, food, home/camp/barracks, support facilities or upgrades?
+47. How do parties merge/split into field armies, and how do command, wages, speed, morale, supply and commanders change?
+48. What can an NPC learn from a raid or betrayal, and how should witnesses, scouts, spies, reports, rumours and merchant networks influence retaliation?
+49. Which resources replenish naturally, which are extracted from finite deposits, and which can expand through new settlements, trade or investment?
+50. Which user-provided historical observations should become behavior examples for CPU rules, and which are analogy or fiction rather than asserted fact?
+
 ## Suggested immediate conversation order
 
-Start with the opening scene and initial inheritance. Then define the map scale, the day-to-day play loop, settlement growth, army/logistics, political hierarchy and finally long-term win/lose states. Record new ideas before locking formulas.
+The user has approved a hybrid household/workforce approach as the working baseline. Next, collect historical and tactical examples as the user is ready. In parallel, clarify one concrete noble appointment/revenue example and one merchant-credit scenario. Then define a small representative simulation joining household needs, production, a market/warehouse, a lord's obligation, a mobile party and an NPC reaction. Keep detailed formulas and content counts OPEN until the interactions make sense.
