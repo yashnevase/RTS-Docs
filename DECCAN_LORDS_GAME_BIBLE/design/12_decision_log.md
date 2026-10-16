@@ -28,6 +28,7 @@ Use one entry per meaningful decision. When a decision changes, keep the old ent
 | D-022 | 2026-10-16 | Merchant, credit and market network | PROPOSED | Merchants are persistent NPCs with capital, goods, routes, relationships, debts and rivalries. Loans, repayment/default, market trade, warehouses and social links can create opportunities and consequences. No loan or price formula is locked. | Design a sample loan-and-caravan scenario and research period-appropriate practices |
 | D-023 | 2026-10-16 | Army parties and recovery | PROPOSED | Small parties may move independently, merge/split into larger armies and raid/escort/intercept moving groups. People and troops recover over time at suitable safe places such as homes, camps and barracks; rates, costs and command rules remain OPEN. | Define representative recovery and party merge/split scenarios |
 | D-024 | 2026-10-16 | Historical examples for NPC behavior | PROPOSED | User will provide historical observations and tactical examples to shape reusable attributes, relationships and CPU decision rules. The technical direction is explainable rules/formulas first; machine learning is not presumed necessary. Examples must distinguish research from interpretation and fictional analogy. | Capture examples as structured scenarios with actors, context, information, options and consequences |
+| D-025 | 2026-10-16 | Structure of noble service/revenue arrangements | LOCKED — high-level only | Arrangements vary by kingdom/institution, rank and circumstances. A noble's relationship with a superior may combine different components such as salary, authority to administer an area, revenue collection/retention/remittance, privileges and service obligations. This locks the mix-and-match structural principle only; historical institutions, titles, rights and formulas remain OPEN. | After historical scope is selected, research the relevant institutions and model their actual differences as data using the shared system |
 
 ## Change log
 
@@ -70,3 +71,8 @@ Captured the user's expanded vision and key open questions. No detailed formulas
 - Added a dedicated cross-system design document for merchants, loans, trade relationships, production investments, warehouses, markets, mobile parties, troop recovery and explainable NPC behavior.
 - Added questions for credit, revenue rights, production, goods flows, recovery, party coordination and NPC information/retaliation.
 - No specific formula, title, historical institution, resource roster, loan term or implementation scope has been locked.
+
+### v0.7 — 2026-10-16 — Noble-service structure agreed at high level
+
+- Recorded the user's choice that noble-service and revenue arrangements vary by kingdom, rank and circumstances and can combine multiple components.
+- Marked only this structural principle as LOCKED. Specific historical titles, legal rights, percentages, obligations and formulas remain OPEN pending period selection and research.
