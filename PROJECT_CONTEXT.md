@@ -1,0 +1,63 @@
+# DECCAN LORDS — Project Context for ChatGPT / Codex
+
+**Last updated:** 2026-10-16  
+**Phase:** Vision discovery and technology validation. No full production implementation authorized yet.
+
+## The user's end goal
+Create a polished, atmospheric, stylized 3D PC strategy game set in historical/alternate-history India, with a strong Deccan focus. The dream is to recover the feeling of playing Age of Empires, Rise of Nations, Anno, Bannerlord, Stronghold/Manor Lords, and some accessible progression appeal observed in Clash of Clans—but not simply clone any one of them.
+
+The user values:
+- Beautiful, readable landscapes, settlements and battlefields; smooth unit animation, satisfying effects and combat feedback, atmospheric sound/music, and professional UI/controls.
+- Peaceful long-session settlement and economic development.
+- Tactical action, armies, raids, sieges, territory and military logistics.
+- Political freedom: serve a superior ruler, expand local authority, become a mercenary or outlaw, create a kingdom, or pursue greater power.
+- Reactive NPC lords whose different stats, personalities, goals, relationships, geography, resources and recent events produce credible but not completely predictable behavior.
+- Accessible early gameplay with depth available gradually; avoid overwhelming newcomers.
+- A single-player CPU campaign first. Cooperative/competitive multiplayer is a future ambition, not an approved v1 requirement.
+- Development with AI coding tools, using one ChatGPT Plus subscription as a limited resource plus a local model for suitable low-risk tasks.
+- Potential release as a downloadable Windows PC game, with Steam and Epic Games Store considered. Success is a goal, not a guarantee.
+
+## Current product identity hypothesis — NOT LOCKED
+Current descriptions lean more toward a **real-time kingdom/settlement sandbox with political simulation and tactical battles** than a pure short-match Age of Empires-style RTS. Anno/Manor Lords-like development and Bannerlord-like emergent politics appear central; AoE-like military clarity/action can be an important layer. Whether the game later has a separate balanced skirmish/competitive mode is open.
+
+Do not market or code it as a pure RTS without revisiting this distinction with the user.
+
+## Opening premise — proposed, not locked
+The player is a young heir to a once-influential Deccan clan. Their father was a respected noble/warlord who served major rulers, built allies and rivals, and held greater responsibility. A succession or political transition leaves the player with a modest ancestral base—potentially several villages, a market town, fortifications, some clan properties and a small force—while the current Sultan entrusts a more experienced lord with the father's former authority. Old allies may help; rivals may try to erase the clan's influence. The player may prove worth, negotiate, change allegiance, become a mercenary/outlaw, rebel, build an independent kingdom or pursue sovereignty.
+
+The exact year, father's fate, start location, holdings, cast, initial crisis and opening sequence remain open.
+
+## World and settlement concepts raised by the user — proposals/open
+- User's long-range aspiration is a world map spanning major Indian powers/places from Delhi toward Kanyakumari, with geography, regions, historic cities, towns and villages. Launch footprint and abstraction level are undecided; a smaller detailed active region with a scalable world data model is a candidate to assess, not a locked decision.
+- Settlements already contain families/households. Housing may progress from huts to houses/wadas and raise population capacity and the kinds/number of families attracted.
+- Households have escalating needs; satisfying needs, security and fair governance can improve prosperity/loyalty/migration, while neglect and excessive taxes may cause unrest or flight.
+- Families/workforce can be assigned to farming, crafting, trade, military support and other roles.
+- Fortifications may be adapted to local geography; hill forts and walled towns offer different defensive strengths and supply limits.
+- Siege play may involve food, weapons, gunpowder, artillery, encampments, relief forces, supply convoys, raids/interception and possible recovery/capture of supplies.
+- Separate caravans/supply parties can carry goods, equipment, livestock or siege supplies. Carrying large loads can slow movement and increase risk; details remain open.
+- Raids, captives, looting and civilian harm raise tone, historical, ethical, balance and age-rating questions that should be discussed explicitly. Do not implement these mechanics without a deliberate design decision.
+- Lords, factions, nobles, companions, rulers and foreign powers need differentiated goals, relationships, resources and authority. Use historical research for the real context but leave room for alternate history.
+
+## AI/algorithm direction — hypothesis
+Start with explainable decision systems rather than adding ML for its own sake. Potential layers: utility scoring for selecting goals/actions; planner (e.g. GOAP/hierarchical tasks) for multi-step goals; tactical behavior trees/state machines/scoring for battles. Shared logic plus different data, personality, information, geography and opportunity should make lords feel distinct. Weighted or seeded randomness adds uncertainty without replacing causality. Evaluate ML only for a narrowly defined problem where it measurably improves play. Multiplayer fairness and reproducibility create extra constraints later.
+
+## Technology direction — proposed
+- Proposed primary engine: Godot stable 4.x, with GDScript; validate with a polished representative scene before full-scale production.
+- Existing Three.js prototype is valuable reference material. Inspect and selectively reuse/port movement, combat, pathfinding, resource logic, visual references and UI ideas. Do not throw it away before review.
+- Avoid building the full campaign in React/HTML and then rebuilding it in Godot.
+- Likely tools: Git/GitHub, VS Code + Codex IDE extension signed into the user's ChatGPT account, Godot, Blender, one optional Godot MCP server after need/compatibility/safety checks, and a local LLM runtime for suitable repetitive work.
+- User's dev machine plan: Mac M4, 16 GB unified memory. The intended release target is primarily Windows PC, with a possible macOS build later. Minimum game PC and performance targets are still open.
+- Codex and ChatGPT Plus usage is limited and changes by plan/task/model. Use local models for suitable support work, but retain strong-model review for architecture and complex integration; no tool pipeline guarantees AAA quality.
+
+## What the user wants from the collaboration
+Have a long, iterative design conversation. The user will share game details in small pieces, including personal observations and historical/local knowledge. Assistant should listen, ask only useful questions, propose alternatives and trade-offs, challenge scope or technical assumptions respectfully, and then record agreed decisions in the living Game Bible. Do not rush to finalize the entire game or replace the user's ideas with a prebuilt design.
+
+## Canonical files
+- Main source of truth: `DECCAN_LORDS_GAME_BIBLE/design/*.md` and its `design/12_decision_log.md`.
+- `DECCAN_LORDS_GAME_BIBLE/design/11_open_questions.md` keeps unresolved questions.
+- `DECCAN_LORDS_GAME_BIBLE/README.md` explains labels and document structure.
+- `DECCAN_LORDS_GAME_BIBLE/exports/` contains v0.1 snapshots, not authoritative if Markdown changes.
+- `AGENTS.md` describes how coding agents must work.
+
+## Current next design subject
+Continue the user's opening story and first playable flow in small steps: exact opening moment, initial holdings, people, father/clan legacy, ruler relationship, allies/rivals, immediate need/threat, and the first choices. Do not settle specifics before the user explains their vision.
