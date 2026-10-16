@@ -22,7 +22,8 @@
 12. [Open questions](design/11_open_questions.md)
 13. [Decision log](design/12_decision_log.md)
 14. [How v1.0 of the earlier GDD relates to this vision](references/13_prior_gdd_notes.md)
-15. [Jev and agent-harness research](references/15_jev_harness_research.md)
+15. [Core gameplay loop: competitive RTS vs kingdom sandbox](design/15_core_loop_and_competitive_sandbox.md)
+16. [Jev and agent-harness research](references/15_jev_harness_research.md)
 
 ## Related agent instructions
 
