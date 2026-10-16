@@ -39,6 +39,18 @@ A tiny React/HTML mockup is acceptable if it validates a UI interaction quickly;
 
 A local model via a local runtime such as Ollama may help with repetitive drafts, sample data, tests, documentation and first-pass utility code. A stronger coding model should handle architecture, complex integration, critical debugging and final reviews. Local inference can reduce external usage, but code and data still need tests and licence/security review. Never grant an untrusted model unrestricted shell, filesystem or secret access by default.
 
+## Jev and decision-model tooling — RESEARCH, NOT ADOPTED
+
+Jev is a hosted decision model that returns typed probabilistic answers to bounded questions (yes/no probability, choice among options, or a score). It may be useful for narrow development workflow tasks such as model routing, categorizing test/playtest traces, or triaging logs. It is not a code-writing model, game engine, pathfinder, or replacement for game simulation rules.
+
+Do not add Jev as a dependency to the game runtime. CPU lord decisions should be grounded in explicit state and tested game algorithms. A hosted decision call at runtime would add latency, service dependence, cost and replay/networking complications without a demonstrated gameplay benefit.
+
+Do not integrate Jev into the Codex workflow yet. LangChain's examples use its own agent middleware; adopting it in our Codex/Godot setup would need extra glue and a separate TypeSafe API key. Vendor-reported task-specific speed/cost figures are not an end-to-end promise. One public coding-agent filtering experiment published mixed evidence: an earlier 30-task run was encouraging, while a later 49-pair Terminal-Bench follow-up reported fewer passes, higher input tokens and higher model cost for that particular implementation. These results do not prove that Jev generally fails; they do show that our own A/B evaluation is necessary.
+
+If repeated classification/routing becomes a measurable bottleneck, build a small off-by-default benchmark and compare completion time, total cost, quality/test pass rate, wrong decisions and human corrections. Keep raw evidence accessible. Never make probabilistic classification the sole security control; deterministic allowlists, OS permissions and user approvals remain authoritative.
+
+See [Jev harness research](../references/15_jev_harness_research.md) for the current evidence and adoption gate.
+
 ## MCP policy
 
 Add an editor MCP integration only after confirming it is maintained, compatible with the pinned Godot version, permission-scoped, and useful for real tasks. MCP is an interface to tools, not a substitute for specs, tests, version control or review.
