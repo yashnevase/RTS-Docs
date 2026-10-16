@@ -54,6 +54,8 @@ Loan fees/interest, deadlines, collateral, default outcomes, the exact merchant 
 
 ## 5. Noble holdings, appointments and obligations
 
+**High-level direction now agreed:** use a configurable mix of arrangement components that can vary by kingdom/institution, rank and circumstances. This is not a universal contract with fixed terms. Only the structural principle is locked; historical names, legal rights, revenue formulas and service details remain open until the setting is researched.
+
 Holdings should scale with the noble's rank and circumstances. Do not assume that every lord has a town, a fortress and villages all at once. A relatively minor lord may hold villages and a small fort; a powerful noble may control many villages, multiple forts, one or more towns and a larger region. The historical starting state determines the actual configuration.
 
 A lord's relationship with a superior ruler could combine several arrangements:
