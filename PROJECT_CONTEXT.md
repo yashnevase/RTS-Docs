@@ -1,6 +1,6 @@
 # DECCAN LORDS — Project Context for ChatGPT / Codex
 
-**Last updated:** 2026-10-16 (world-model clarification)  
+**Last updated:** 2026-10-16 (connected economy, noble service, credit and recovery sync)  
 **Phase:** Vision discovery and technology validation. No full production implementation authorized yet.
 
 ## The user's end goal
@@ -33,10 +33,16 @@ The exact year, father's fate, start location, holdings, cast, initial crisis an
 - The engineering question is how detailed and frequently updated each entity must be, not whether a wide fixed map is automatically impossible. Prototype and profile representative gameplay before choosing simulation-detail levels; do not use that decision as a pretext to shrink the world prematurely.
 - Settlements already contain families/households. Housing may progress from huts to houses/wadas and raise population capacity and the kinds/number of families attracted.
 - Households have escalating needs; satisfying needs, security and fair governance can improve prosperity/loyalty/migration, while neglect and excessive taxes may cause unrest or flight.
-- Families/workforce can be assigned to farming, crafting, trade, military support and other roles.
+- Families/workforce can be assigned to farming, crafting, trade, military support and other roles. **The user has approved a hybrid household/workforce model as the working baseline**: households and housing matter, but the player assigns labour by role/category rather than manually controlling every individual. Exact housing capacities, needs and formulas remain open.
+- Suitable production facilities should depend on local terrain, soil, water, weather/season, forest or mineral resources, labour, routes and market access. Production chains, warehouses, stock security, buying/selling and caravans should create connected goods flows with manageable detail inspired by Anno.
+- Prosperity and suitable housing may attract new families, while existing households may request better housing or services. Growth increases labour and revenue but also raises consumption and other demands.
+- Merchants/traders are persistent NPCs with capital, inventories, routes, friends, rivals, creditors/debtors and relationships with nobles. They may offer loans and contracts; trust, repayment/default and social connections affect opportunities and consequences. Exact finance rules remain open.
+- Noble appointments may combine salary, authority to administer/collect revenue from assigned land, a remittance to a superior, privileges and military/service obligations. A ruler's policy may change the arrangement. These are candidate mechanics, not a finalized historical/legal model.
+- Small parties, caravans and armies move on the strategic map. Parties may combine or split; raids can transfer goods and provoke informed or uncertain retaliation. Civilians and troops recover over time in suitable safe locations such as homes, camps or barracks; facility upgrades may improve recovery. Rates and exact rules remain open.
 - Fortifications may be adapted to local geography; hill forts and walled towns offer different defensive strengths and supply limits.
 - Siege play may involve food, weapons, gunpowder, artillery, encampments, relief forces, supply convoys, raids/interception and possible recovery/capture of supplies.
 - Separate caravans/supply parties can carry goods, equipment, livestock or siege supplies. Carrying large loads can slow movement and increase risk; details remain open.
+- Production, population, trade, treasury, manpower and military strength form connected flows. War loot transfers assets from the defeated party; casualties, damage, disrupted routes and lost goods can weaken the victim, while growth and recovery still follow explicit rules.
 - Raids, captives, looting and civilian harm raise tone, historical, ethical, balance and age-rating questions that should be discussed explicitly. Do not implement these mechanics without a deliberate design decision.
 - Lords, factions, nobles, companions, rulers and foreign powers need differentiated goals, relationships, resources and authority. Use historical research for the real context but leave room for alternate history.
 
@@ -70,4 +76,4 @@ Have a long, iterative design conversation. The user will share game details in 
 - `AGENTS.md` describes how coding agents must work.
 
 ## Current next design subject
-First define the core player loop and relationship between the long-running campaign sandbox and possible competitive skirmish play. Ask what the player is actively doing in an ordinary 10–15 minute stretch, what decisions create tension when no battle occurs, and what actions feel satisfying. Then discuss the broad historical starting date and faction state; only after that construct the faction/culture/attribute chart using the user's data plus sourced historical checks. Continue the inheritance story and initial holdings after the recurring player loop is clear. Do not force the user to answer every open question at once, and do not convert the recommendation into a locked decision without explicit agreement.
+The user has approved the hybrid household/workforce approach and described connected economy, merchant credit, noble service arrangements, troop recovery and mobile parties. Continue collecting the user's historical observations and tactical examples, then clarify one concrete noble revenue/service arrangement and one merchant-credit scenario. Build the attribute and behavior model from repeated examples, separating verified history, user-provided interpretation, design inference and fictional alternatives. Ask one focused question at a time; do not lock formulas, exact resource lists, titles or historical details without agreement.
