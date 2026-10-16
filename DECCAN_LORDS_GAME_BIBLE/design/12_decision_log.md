@@ -22,6 +22,7 @@ Use one entry per meaningful decision. When a decision changes, keep the old ent
 | D-016 | 2026-10-16 | World scale | OPEN | Large fixed-map coverage is the intended direction; what differs by distance is simulation detail/update cost, not whether places exist in the world | Define required geographic coverage and test simulation-detail levels without presuming the world should be shrunk |
 | D-017 | 2026-10-16 | World representation | PROPOSED | A large fixed, researched map is the ambition; scale variety through reusable entity/system templates with different data (culture, geography, traits, resources, relationships, rank, goals and state), rather than unique code for each location or lord. Geographic size alone is not a reason to shrink the intended world. | Design data schemas and test update/detail levels on a representative slice; keep full-map ambition explicit |
 | D-018 | 2026-10-16 | Jev decision model | RESEARCH / NOT ADOPTED | Keep Jev out of runtime simulation and current Codex workflow. Consider a narrow development-tool A/B test only if repeated routing/classification is a demonstrated bottleneck. | Revisit after the basic Codex/Godot/test pipeline exists and there is a measurable candidate task |
+| D-019 | 2026-10-16 | Core mode and competitive potential | OPEN | User wants repeatable, understandable, strategically fair RTS-style competition and a persistent sandbox with culture/geography/politics-driven emergent history. Recommendation under discussion: shared data-driven simulation, campaign/sandbox as the first design target, possible separately balanced competitive skirmish ruleset later. | Define the ordinary 10–15-minute player loop and start-date premise before finalizing modes or balance rules |
 
 ## Change log
 
@@ -48,3 +49,11 @@ Captured the user's expanded vision and key open questions. No detailed formulas
 - Recorded the user's analogy: repeated underlying entities and logic can create variety through different data, culture, geography, resources, traits, relationships and circumstances.
 - Reframed scale risk around simulation detail, content and performance validation rather than treating geographic breadth as an automatic reason to cut the map.
 - Kept exact geography, historical roster, detail level and implementation details open; this clarification does not authorize inventing missing specifics.
+
+
+### v0.5 — 2026-10-16 — Core gameplay and competitive/sandbox fork
+
+- Added a dedicated design note distinguishing a living kingdom campaign from a competitive RTS/skirmish ruleset.
+- Recorded the working recommendation to use shared simulation foundations, but not assume identical pacing/progression/victory rules across modes.
+- Added historically grounded date-window questions: the chosen start year affects which factions, political relationships and foreign presences are plausible.
+- No mode, start date, full faction roster, map footprint, or release scope has been locked.
