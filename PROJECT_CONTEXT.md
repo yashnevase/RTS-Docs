@@ -1,6 +1,6 @@
 # DECCAN LORDS — Project Context for ChatGPT / Codex
 
-**Last updated:** 2026-10-16  
+**Last updated:** 2026-10-16 (world-model clarification)  
 **Phase:** Vision discovery and technology validation. No full production implementation authorized yet.
 
 ## The user's end goal
@@ -28,7 +28,9 @@ The player is a young heir to a once-influential Deccan clan. Their father was a
 The exact year, father's fate, start location, holdings, cast, initial crisis and opening sequence remain open.
 
 ## World and settlement concepts raised by the user — proposals/open
-- User's long-range aspiration is a world map spanning major Indian powers/places from Delhi toward Kanyakumari, with geography, regions, historic cities, towns and villages. Launch footprint and abstraction level are undecided; a smaller detailed active region with a scalable world data model is a candidate to assess, not a locked decision.
+- **Large fixed-map intent:** the user's ambition is researched/hand-authored strategic geography spanning major locations from Delhi toward Kanyakumari, with historic cities, towns, villages, forts, ports, roads, rivers, passes and regional terrain. Do not assume the world must be shrunk merely because the geographic extent is large.
+- **Shared engine, varied data:** the world is not intended to be procedurally randomized geography. Reusable entity types and systems represent lords, factions, households, settlements, armies, parties, forts and trade posts. Unique outcomes emerge from different combinations of culture, traits, resources, geography, population, relationships, rank, ambitions, army composition, supply and events. Avoid bespoke code for every named entity.
+- The engineering question is how detailed and frequently updated each entity must be, not whether a wide fixed map is automatically impossible. Prototype and profile representative gameplay before choosing simulation-detail levels; do not use that decision as a pretext to shrink the world prematurely.
 - Settlements already contain families/households. Housing may progress from huts to houses/wadas and raise population capacity and the kinds/number of families attracted.
 - Households have escalating needs; satisfying needs, security and fair governance can improve prosperity/loyalty/migration, while neglect and excessive taxes may cause unrest or flight.
 - Families/workforce can be assigned to farming, crafting, trade, military support and other roles.
