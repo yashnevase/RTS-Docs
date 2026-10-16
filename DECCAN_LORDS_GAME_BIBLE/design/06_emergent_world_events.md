@@ -35,3 +35,7 @@ The player should learn reliable relationships, but not know every opponent's ex
 ## Reproducibility and debugging
 
 Store random seeds for test scenarios where possible. Log important AI choices with inputs, candidate actions, scores and selected action. A developer/debug view should explain why a lord chose war, retreat, alliance or development. This makes emergent behavior tuneable instead of mysterious.
+
+## Connected-system extension
+
+The cross-system design connects market/household changes, merchant credit, mobile parties, raids, imperfect information, retaliation and recovery. Events should arise from actual state and actors should respond only to information they could plausibly possess. See [Connected economy, noble service, merchant networks and military recovery](16_connected_economy_politics_and_ai.md); the examples are illustrative, not locked events or formulas.
