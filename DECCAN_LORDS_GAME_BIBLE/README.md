@@ -24,6 +24,7 @@
 14. [How v1.0 of the earlier GDD relates to this vision](references/13_prior_gdd_notes.md)
 15. [Core gameplay loop: competitive RTS vs kingdom sandbox](design/15_core_loop_and_competitive_sandbox.md)
 16. [Jev and agent-harness research](references/15_jev_harness_research.md)
+17. [Connected economy, noble service, merchant networks and military recovery](design/16_connected_economy_politics_and_ai.md)
 
 ## Related agent instructions
 
