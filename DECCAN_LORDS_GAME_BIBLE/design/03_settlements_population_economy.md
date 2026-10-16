@@ -46,3 +46,7 @@ Candidate resources and goods include food/grain, timber/firewood, stone, iron, 
 ## Key edge cases to specify later
 
 Famine, bad monsoon, siege shortages, storage loss, migration, tax revolt, market access, isolated villages, disrupted roads, stolen supply, population recovery after war, production shutdown when labor or inputs are unavailable, and what persists when a settlement changes owner.
+
+## Connected-system extension
+
+The latest cross-system working design—including the approved hybrid household/workforce baseline, geography-aware production, warehouses, markets, household attraction and persistent merchant loans/relationships—is documented in [Connected economy, noble service, merchant networks and military recovery](16_connected_economy_politics_and_ai.md). Use it alongside this file; it does not replace the settlement formulas and open questions here.
