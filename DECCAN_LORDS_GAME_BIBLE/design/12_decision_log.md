@@ -20,6 +20,7 @@ Use one entry per meaningful decision. When a decision changes, keep the old ent
 | D-014 | 2026-10-16 | AI-assisted development workflow | PROPOSED | Private Git repository + canonical Markdown + root `AGENTS.md` + Codex VS Code extension; optional ChatGPT GitHub read integration; optional Godot MCP after validation | Establish repository and baseline workflow before implementing the game |
 | D-015 | 2026-10-16 | Audience and launch strategy | OPEN | Accessible surface, deep long-session play and polished PC release are goals; Steam/Epic reach and Stardew-like success are ambitions, not assumptions | Build vertical slice, playtest, then validate positioning and demand |
 | D-016 | 2026-10-16 | World scale | OPEN | Long-term world aspiration spans major Indian powers from Delhi toward Kanyakumari; launch detail scale remains unknown | Compare full India simulation with a focused active region and expandable world model |
+| D-017 | 2026-10-16 | World representation | PROPOSED | A large fixed, researched map is the ambition; scale variety through reusable entity/system templates with different data (culture, geography, traits, resources, relationships, rank, goals and state), rather than unique code for each location or lord. Geographic size alone is not a reason to shrink the intended world. | Design data schemas and test update/detail levels on a representative slice; keep full-map ambition explicit |
 
 ## Change log
 
@@ -32,3 +33,10 @@ Captured the user's expanded vision and key open questions. No detailed formulas
 - Added the current genre/audience hypothesis without locking the final label or modes.
 - Recorded that the AI-assisted development story shared by the user is a workflow idea to evaluate, not a proven recipe for AAA quality or guaranteed commercial success.
 - No release scope, mode list, exact region, formulas or sales targets are locked by this update.
+
+### v0.3 — 2026-10-16 — Fixed-world and reusable-system clarification
+
+- Clarified the ambition for a large fixed map spanning major locations from Delhi toward Kanyakumari.
+- Recorded the user's analogy: repeated underlying entities and logic can create variety through different data, culture, geography, resources, traits, relationships and circumstances.
+- Reframed scale risk around simulation detail, content and performance validation rather than treating geographic breadth as an automatic reason to cut the map.
+- Kept exact geography, historical roster, detail level and implementation details open; this clarification does not authorize inventing missing specifics.
