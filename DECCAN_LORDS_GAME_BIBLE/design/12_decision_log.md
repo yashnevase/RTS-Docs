@@ -21,6 +21,7 @@ Use one entry per meaningful decision. When a decision changes, keep the old ent
 | D-015 | 2026-10-16 | Audience and launch strategy | OPEN | Accessible surface, deep long-session play and polished PC release are goals; Steam/Epic reach and Stardew-like success are ambitions, not assumptions | Build vertical slice, playtest, then validate positioning and demand |
 | D-016 | 2026-10-16 | World scale | OPEN | Large fixed-map coverage is the intended direction; what differs by distance is simulation detail/update cost, not whether places exist in the world | Define required geographic coverage and test simulation-detail levels without presuming the world should be shrunk |
 | D-017 | 2026-10-16 | World representation | PROPOSED | A large fixed, researched map is the ambition; scale variety through reusable entity/system templates with different data (culture, geography, traits, resources, relationships, rank, goals and state), rather than unique code for each location or lord. Geographic size alone is not a reason to shrink the intended world. | Design data schemas and test update/detail levels on a representative slice; keep full-map ambition explicit |
+| D-018 | 2026-10-16 | Jev decision model | RESEARCH / NOT ADOPTED | Keep Jev out of runtime simulation and current Codex workflow. Consider a narrow development-tool A/B test only if repeated routing/classification is a demonstrated bottleneck. | Revisit after the basic Codex/Godot/test pipeline exists and there is a measurable candidate task |
 
 ## Change log
 
@@ -33,6 +34,13 @@ Captured the user's expanded vision and key open questions. No detailed formulas
 - Added the current genre/audience hypothesis without locking the final label or modes.
 - Recorded that the AI-assisted development story shared by the user is a workflow idea to evaluate, not a proven recipe for AAA quality or guaranteed commercial success.
 - No release scope, mode list, exact region, formulas or sales targets are locked by this update.
+
+### v0.4 — 2026-10-16 — Jev harness research
+
+- Added a technical assessment of Jev as a structured decision model for narrow questions.
+- Decided not to adopt it for runtime game AI or the current Codex workflow.
+- Recorded a possible future A/B experiment if repeated classification/routing overhead becomes a measurable bottleneck.
+- This is a provisional tooling decision based on currently available evidence; it does not reject Jev for all future use cases.
 
 ### v0.3 — 2026-10-16 — Fixed-world and reusable-system clarification
 
