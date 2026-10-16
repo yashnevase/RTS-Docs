@@ -26,3 +26,12 @@
 - Added the shared-engine model: entities reuse common rules while different data for culture, traits, geography, population, resources, rank, ambitions, relationships, armies and circumstances creates varied behavior.
 - Clarified that map scale and simulation detail are separate questions. Performance/detail levels should be tested, not used as a pretext to automatically shrink the intended world.
 - Kept exact location roster, historical date, detail tiers and technical implementation OPEN.
+
+
+## v0.4 — 2026-10-16 — Jev harness research
+
+- Added a research note on Jev's typed decision primitives and LangChain's model-routing/tool-risk middleware.
+- Recorded the current recommendation: do not use Jev for the game's runtime lord/army AI and do not add it to the Codex workflow yet.
+- Preserved it as a candidate for a narrow, measurable A/B test if repeated development-time classification or routing becomes a bottleneck.
+- Included mixed public coding-agent experiment results to emphasize that classifier speed is not the same as end-to-end task success or savings.
+- No game mechanic or engine decision changed because of this research.
