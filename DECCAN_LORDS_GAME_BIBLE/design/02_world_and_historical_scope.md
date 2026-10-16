@@ -4,16 +4,29 @@
 
 The broad ambition is a map spanning a large part of the subcontinent—from the Delhi region toward Kanyakumari—with major historical cities, towns, villages, forts, ports and local power centers. Some settlements may grow into larger towns/cities; neglected or devastated places may temporarily become ruins and later recover. The Deccan is the narrative and political starting point, not necessarily the permanent geographic limit of the dream game.
 
-## Major scale warning
+## Core world model — important clarification
 
-A map covering most of India, with all settlements simulated at village-level detail, all lords active, evolving populations, supply convoys, wars and diplomacy, is a very large content and simulation problem. The key design decision is not simply “small map or large map”; it is **which level of detail is simulated at each scale**.
+The ambition is a **large, fixed, researched map spanning major parts of the subcontinent—from the Delhi region toward Kanyakumari**. The user explicitly does not want us to assume that a large map is inherently too ambitious merely because it covers a lot of geography.
 
-Possible layered model to evaluate:
-- **Strategic layer:** regions, routes, settlements, fortresses, factions, armies and political control across a wide map.
-- **Local settlement layer:** detailed construction, household needs, production and population management for owned/nearby/relevant places.
-- **Tactical layer:** focused battles or siege encounters on a local battlefield.
+The intended approach is **fixed geography + reusable systems + varied data**, not a Minecraft-style random world and not bespoke code for every settlement or lord.
 
-This model is PROPOSED, not locked. We need to decide whether all the layers share one zoomable world, use different scenes, or use a hybrid.
+- Hand-author or research strategic geography and important real-world locations, routes, rivers, passes, terrain regions and strategic landmarks.
+- Represent villages, towns, cities, forts, ports, parties, armies, nobles, factions and rulers through common schemas and reusable behavior systems.
+- Differentiate instances through their data: geography, culture, customs, resources, production, population, needs, prosperity, fortification, faction/overlord, rank/authority, army, traits, ambitions, relationships, memories and circumstances.
+- A shared system should create distinct outcomes from differing inputs. The same lord decision system may make one noble conciliatory, another suspicious and another aggressive because their goals, traits, information, resources, allies and terrain differ.
+- Controlled/seeded randomness can add variation, but random numbers should enrich plausible behavior rather than substitute for rules.
+- Reusable entities should not be identical reskinned objects: a hill fort, coastal port and plateau town need different data and relevant rule modifiers while sharing the underlying architecture.
+
+## Scale is not the same as simulation detail
+
+A large geographic map and a fully detailed simulation of every household at every moment are separate decisions. Do not respond to the map ambition by automatically shrinking the world to one small region. First define the shared world model and prove it with a representative slice.
+
+Possible detail levels to evaluate for performance—not as a reason to remove geography:
+- **Local detail:** settlements and battles the player is inspecting, owning or interacting with can expose detailed household, building, production and tactical simulation.
+- **Strategic simulation:** distant or less relevant places can still exist, change ownership, produce/consume aggregate resources, move, form relationships and participate in wars using cheaper updates where appropriate.
+- **Landmarks and routes:** important forts, cities, rivers, ports and passes remain meaningful even when not viewed closely.
+
+These levels are a performance/detail hypothesis to validate. They must not prevent the larger world from behaving consistently or make distant lords/settlements feel like fake decoration. Exact map coverage, update cadence and representation at each zoom level remain design/technical decisions.
 
 ## Geography as gameplay
 
