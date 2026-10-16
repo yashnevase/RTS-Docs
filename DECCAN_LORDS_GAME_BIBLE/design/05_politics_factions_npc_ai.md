@@ -60,3 +60,7 @@ Potential path: minor heir → recognized local lord → regional power/vassal o
 ## AI personality without chaos
 
 Different lords can share the same algorithm but have different goals, fears, budgets, geography, allies, memories, military doctrine and risk preferences. Their actions should be driven by explainable state and constraints, not arbitrary hidden advantages. Randomness should select among plausible options, not replace planning.
+
+## Connected-system extension
+
+The cross-system design expands noble appointments/revenue obligations and merchant social networks, credit, debt disputes and information sharing. It also sets out a structured method for capturing the user's future historical observations as testable NPC-behavior scenarios. See [Connected economy, noble service, merchant networks and military recovery](16_connected_economy_politics_and_ai.md). Exact historical institutions and formulas remain open.
