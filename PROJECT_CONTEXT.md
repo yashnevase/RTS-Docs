@@ -43,6 +43,14 @@ The exact year, father's fate, start location, holdings, cast, initial crisis an
 ## AI/algorithm direction — hypothesis
 Start with explainable decision systems rather than adding ML for its own sake. Potential layers: utility scoring for selecting goals/actions; planner (e.g. GOAP/hierarchical tasks) for multi-step goals; tactical behavior trees/state machines/scoring for battles. Shared logic plus different data, personality, information, geography and opportunity should make lords feel distinct. Weighted or seeded randomness adds uncertainty without replacing causality. Evaluate ML only for a narrowly defined problem where it measurably improves play. Multiplayer fairness and reproducibility create extra constraints later.
 
+## Jev / decision-model assessment — RESEARCH, NOT ADOPTED
+
+The user shared LangChain's “Building a Harness with Jev” article. Jev is a hosted decision model for structured yes/no, choice and score outputs. It could be tested for narrow development tasks (routing, log/test-trace categorization or evaluation), but it is not a code-writing agent or a game-simulation engine.
+
+Do not put Jev into runtime CPU AI. Use explicit, testable simulation algorithms for lords and armies. Do not add Jev to Codex workflow by default; its LangChain middleware does not plug directly into Codex without extra integration and a separate TypeSafe API key. Vendor speed/cost maxima are task-specific. One public coding-agent filter experiment showed an earlier promising result but its later 49-pair TB4 follow-up did not show an end-to-end benefit. Only reconsider Jev after a controlled A/B test proves net savings without lower task quality.
+
+Full research note: `DECCAN_LORDS_GAME_BIBLE/references/15_jev_harness_research.md`.
+
 ## Technology direction — proposed
 - Proposed primary engine: Godot stable 4.x, with GDScript; validate with a polished representative scene before full-scale production.
 - Existing Three.js prototype is valuable reference material. Inspect and selectively reuse/port movement, combat, pathfinding, resource logic, visual references and UI ideas. Do not throw it away before review.
