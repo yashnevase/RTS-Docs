@@ -10,10 +10,10 @@ These are prompts, not a questionnaire the user must answer all at once. Work th
 5. Is the player named/customized, and do personal stats matter in v1?
 
 ## B. Map scale and zoom
-6. Is India-wide coverage a launch requirement or a long-term ambition?
-7. How are strategic map, local town building and tactical battlefield connected?
-8. Are all settlements editable, or do distant places use aggregate simulation until relevant?
-9. Which locations are essential for the first playable region?
+6. The desired world is a large fixed, researched map extending from Delhi toward Kanyakumari. What geographic boundaries, locations and routes must be represented, and what historical start date fixes the roster?
+7. How are strategic map, local settlement management and tactical battlefield connected?
+8. Which simulation details must be maintained for every entity at all times, and which can update at a cheaper cadence while remaining behaviorally consistent?
+9. Which locations, settlement types and entity interactions must be represented in the first vertical slice to validate the full-world model?
 
 ## C. Settlements and population
 10. Is the basic unit a person, family/household, or workforce point?
