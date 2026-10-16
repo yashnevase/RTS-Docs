@@ -50,3 +50,7 @@ Infantry, cavalry and ranged units are an initial abstraction, not a finalized r
 ## Reuse of existing prototype
 
 The uploaded Three.js prototype already has selection/movement/combat/pathfinding mechanics that can inform requirements. Reuse is conditional on a focused technical audit. Do not port everything automatically or assume it can be copied directly into Godot.
+
+## Connected-system extension
+
+The cross-system design adds party merge/split, time-based recovery at homes/camps/barracks, and raid outcomes that depend on what the target and its allies can learn and how they evaluate retaliation. See [Connected economy, noble service, merchant networks and military recovery](16_connected_economy_politics_and_ai.md); exact recovery, command and retaliation rules remain open.
