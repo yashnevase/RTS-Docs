@@ -35,3 +35,12 @@
 - Preserved it as a candidate for a narrow, measurable A/B test if repeated development-time classification or routing becomes a bottleneck.
 - Included mixed public coding-agent experiment results to emphasize that classifier speed is not the same as end-to-end task success or savings.
 - No game mechanic or engine decision changed because of this research.
+
+
+## v0.5 — 2026-10-16 — Core gameplay and competitive sandbox direction
+
+- Added a design note distinguishing a long-running kingdom campaign from a balanced competitive skirmish ruleset.
+- Captured the user's design principle: common systems and entity types create variety through culture, geography, stats, relationships, resources and circumstances.
+- Added a starting-date research note: a 1500–1800 umbrella cannot be treated as one unchanged faction roster; the date affects which powers and relationships exist.
+- Recommended discussing the minute-to-minute player loop before locking mode architecture, exact factions, start holdings or technical build scope.
+- No gameplay mode, start year or release scope is locked.
