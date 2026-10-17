@@ -61,3 +61,10 @@
 - Adapted the Three.js Game Skills reference's specialist routing, seeded testing, visual evidence and release-gate methodology without importing its Vite/Three.js scaffold.
 - Documented model/effort selection, staged implementation, asset licence hygiene and a reusable one-milestone prompt. Corrected the stable Godot reference to 4.7.1; Blender 5.2.2 LTS was also checked on 2026-10-17.
 - Exact start date, world roster, art benchmark, detailed mechanics, MCP choice and final release scope remain open.
+
+## v0.8 — 2026-10-17 — M0 bootstrap and feature register
+
+- Added a campaign progression/feature register covering the user's intended lord-to-king/empire path and the connected settlement, economy, political, social, military, trade, intelligence and long-session systems.
+- Added M0 local setup instructions for an assigned repository folder, official tool installation checks, a Godot-root directory convention and explicit quality gates.
+- Added a reference evaluation guide for the supplied Godot RTS skill/tutorial/open-source repo and guardrails for selective, licensed reuse.
+- Confirmed that the entire vision is preserved while the first playable slice is deliberately smaller; new features must pass evidence-based gates before scope expands.
