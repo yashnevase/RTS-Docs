@@ -1,6 +1,6 @@
 # 15 — Core gameplay direction: competitive RTS vs living kingdom sandbox
 
-**Status: OPEN — design fork for discussion**  
+**Status: HIGH-LEVEL CAMPAIGN FORMAT AGREED; detailed modes and pacing remain OPEN**  
 **Created:** 2026-10-16  
 **Purpose:** Preserve the user's two connected ambitions without prematurely forcing them into one ruleset.
 
@@ -29,7 +29,7 @@ Players begin from carefully designed and competitively checked scenario conditi
 
 This experience favors clear win conditions, balanced or intentionally asymmetric factions, readable counters, responsive controls, predictable core rules, fair information and bounded match duration.
 
-The user has observed the appeal of classic AoE/Rise of Nations-style repeatable matches and wants to preserve that potential. No competitive mode, release date or specific ranked format is approved yet.
+The user has observed the appeal of classic AoE/Rise of Nations-style repeatable matches and wants to preserve that potential. A competitive mode, release date and specific ranked format are not approved yet. The campaign/settlement/tactical-battle combination is the agreed high-level primary format; exact scenes, transitions and first-release scope still need a technical prototype.
 
 ## Updated working recommendation from the user's historical-pattern discussion — PROPOSED
 
@@ -43,9 +43,9 @@ The art recommendation to test is stylised, readable 3D with a three-quarter/iso
 
 See [Recommended game format and AI-assisted production pipeline](18_game_format_and_ai_production_pipeline.md) for the full proposal, staged feature scope, versioned tool recommendations and automation guardrails.
 
-## Recommendation to evaluate: one simulation foundation, separate rulesets where needed
+## Agreed high-level direction: one persistent campaign foundation, with optional later rulesets
 
-Do not force a choice between "AoE" and "Bannerlord" before the core loop is tested. A plausible architecture is:
+The user approved the high-level hybrid direction. The architecture to test is:
 
 - Share core entity schemas and rules where appropriate: settlements, households, goods, armies, terrain, movement, combat primitives, faction identity and orders.
 - Use a **campaign layer** to add persistent economy, household development, relationships, noble hierarchy, long-term goals, supply networks and changing political control.
