@@ -1,12 +1,12 @@
 # 18 — Recommended game format, player flow and AI-assisted production pipeline
 
-**Status: RECOMMENDATION FOR DISCUSSION — not fully locked**  
+**Status: HIGH-LEVEL FORMAT LOCKED; detailed scope and implementation PROPOSED**  
 **Date:** 2026-10-17  
 **Purpose:** Turn the user's game references, current historical observations and solo/AI-assisted development constraints into one practical direction. This recommendation should guide the first prototype without pretending that all content, formulas or historical institutions have been finalised.
 
 ## Executive recommendation
 
-Build **a fixed-world kingdom strategy sandbox with real-time tactical battles, settlement development and emergent political/economic simulation**.
+Build **a fixed-world kingdom strategy sandbox with real-time tactical battles, settlement development and emergent political/economic simulation**. The user approved this high-level product direction and flow. The exact historical start date, faction roster, camera/art benchmark, detailed rules and first-release feature boundary remain open.
 
 The strategic world starts from a researched, hand-authored historical/alternate-history state. It is not an empty random map that every player fills from zero. The world then evolves through shared simulation rules: rulers make decisions, parties travel, trade and war change holdings, households grow or leave, relationships change, and new kingdoms may rise.
 
@@ -118,7 +118,7 @@ Do not commit to a delivery date until this slice has run and been measured.
 
 ## 6. Recommended development stack, checked on 17 October 2026
 
-- **Main engine:** Godot 4.7.2 stable was the latest stable release found on the official archive on the check date; 4.8 was still beta. Pin a stable patch for the project and revisit only through tested upgrades. Official archive: https://godotengine.org/download/archive/ and release policy: https://docs.godotengine.org/en/stable/about/release_policy.html
+- **Main engine:** Godot 4.7.1 was the latest stable release listed in the official archive on 17 October 2026; Godot 4.8 was still a development build. Re-check the official archive during setup and pin the stable patch selected for the project. Pin a stable patch for the project and revisit only through tested upgrades. Official archive: https://godotengine.org/download/archive/ and release policy: https://docs.godotengine.org/en/stable/about/release_policy.html
 - **Gameplay language:** GDScript first, because the project is primarily a Godot gameplay/simulation project. Avoid adding C# or extra frameworks until a measured need justifies it.
 - **3D creation:** Blender 5.2.2 LTS was available from the official Blender site on the check date: https://www.blender.org/download/lts/. Keep reusable source assets organised. Godot recommends glTF 2.0 (.glb/.gltf) as a strong interchange format; direct Blender-source import calls Blender during import and adds a dependency to the project workflow. Reference: https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/available_formats.html
 - **Editor/AI coding:** VS Code plus the Codex IDE extension, signed in to the user's ChatGPT account, or Codex CLI running in the project directory. Codex usage limits depend on the plan and model; a Plus account should not be treated as unlimited. Official guide: https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan
@@ -130,6 +130,54 @@ Do not commit to a delivery date until this slice has run and been measured.
 - **Documentation retrieval:** OpenAI's public docs MCP at https://developers.openai.com/mcp is read-only developer-documentation search. It may be useful inside Codex but it is optional, not needed to launch the game.
 
 Current references were checked on 2026-10-17. Re-check releases when actually setting up the machine; never use a beta merely because it is newest.
+
+### Project-local Codex skills and department workflow
+
+The repository includes a Godot-native skill suite under `skills/`, inspired by the director/specialist/evidence pattern in [threejs-game-skills](https://github.com/majidmanzarpour/threejs-game-skills). It is **not** the upstream Three.js scaffold and does not require paid asset APIs.
+
+Install it into an actual Godot project after `project.godot` exists:
+
+```bash
+bash scripts/install_deccan_lords_skills.sh /absolute/path/to/the/game-project
+```
+
+The script copies only the project skills to `.agents/skills/` and refuses to overwrite existing skill folders. See [skills/README.md](../../skills/README.md). The director skill routes work to gameplay, visual assets, UI/UX, audio, debugging/profiling and QA/release specialists as needed. It loads only relevant skills for the current task, not all references every time.
+
+**Per-prompt rule:** one milestone or one coherent feature at a time. Each prompt should state the user-visible outcome, files/systems in scope, acceptance checks, explicit non-goals and required evidence. The agent may involve specialists automatically, but must not advance to the next milestone until the current one is tested and reported.
+
+The upstream reference's useful ideas are department-based prompts, seeded deterministic testing, running the actual game, screenshots, playtest/visual evidence and a residual-risk report. Its bundled Vite/Three.js scaffold, Playwright/canvas inspection scripts and browser release steps are not used for this Godot game. We adapt those principles to Godot import/headless checks, GDScript simulation tests, actual scene interaction, screenshots and platform exports.
+
+### Model and reasoning-effort policy
+
+Use the **lightest model/effort that reliably meets the acceptance bar**, and only escalate when evidence shows the task needs it. Model names and access differ between ChatGPT and Codex interfaces, so select by tier from the models actually offered. OpenAI's current guidance distinguishes top-tier models for complex reasoning from balanced models for cost-sensitive engineering and efficient models for simpler tasks. Codex use also varies with model, context, task complexity and tools. References: [model selection](https://developers.openai.com/api/docs/guides/model-selection), [reasoning effort](https://developers.openai.com/api/docs/guides/reasoning), [Codex plan usage](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan).
+
+| Task | Model/effort starting point | Why |
+|---|---|---|
+| Cross-system architecture, data boundaries, first project plan | Strongest available reasoning/coding model, **High**; use **Extra High/xhigh once** for a major architecture/security review | Mistakes here cause expensive rework; invest reasoning once, then preserve decisions in docs |
+| Implement a clearly scoped feature with acceptance criteria | Balanced/strong coding model at **Medium** | Good everyday quality; avoid high reasoning when the task is already specified |
+| Small docs edit, data fixture, repetitive conversion or isolated utility | Efficient model at **Low/Medium**, or a modest local Ollama model if already configured | Cheap, easy to verify; escalate only if it struggles |
+| Complex bug with reproducible logs, or an integrated milestone review | Strongest available coding/reasoning model at **High**; **Extra High/xhigh** only for an unusually hard issue | Use measured evidence and the smallest reproducer; do not ask a high model to guess without logs |
+| QA | Deterministic scripts/tests first; balanced model to interpret failures; strongest model for high-risk review | Automated pass/fail evidence is more repeatable than repeatedly asking an LLM whether code looks right |
+
+Use a GPT-6/Codex-tier model if available for architecture and difficult debugging; use a GPT-5.6/5.5 or other balanced coding model at Medium for routine implementation when listed in your UI; use a cost-efficient or local model for mechanical work. This is a tier recommendation, not a promise that every client exposes those exact names. Do not use Extra High for every phase.
+
+**Token-saving habits:** let the director skill read the relevant docs; do not paste the whole Game Bible into every prompt; do not ask one run to build the whole game; avoid parallel agents editing the same files; give a compact acceptance checklist; run a reusable test command instead of re-explaining checks. When limits are near, check the Codex usage/status dashboard before deciding whether to switch to local inference or use the plan's reset.
+
+### One-prompt milestone template
+
+Copy and edit this when the game project exists:
+
+```text
+Use deccan-lords-director. Read AGENTS.md, PROJECT_CONTEXT.md, the Game Bible README, decision log, and the relevant system spec. Use only the installed DECCAN LORDS skills this task needs.
+
+Proceed with MILESTONE [number/name] only: [specific visible outcome].
+Acceptance criteria:
+- [observable behaviour]
+- [test or reproducible scenario]
+- [visual/build/save check where relevant]
+
+Do not implement later milestones or add unapproved dependencies, services or assets. Preserve GDScript-first and data-driven simulation/render/UI separation. Run the relevant tests, launch/inspect the actual Godot scene when possible, capture a screenshot for visual work, inspect the diff, and fix failures before reporting. End with exact checks/results, evidence paths, remaining gaps/risks and the next single milestone. Do not claim anything was tested if it was not run.
+```
 
 ## 7. Important boundary: what "controlled from ChatGPT" means
 
