@@ -31,6 +31,18 @@ This experience favors clear win conditions, balanced or intentionally asymmetri
 
 The user has observed the appeal of classic AoE/Rise of Nations-style repeatable matches and wants to preserve that potential. No competitive mode, release date or specific ranked format is approved yet.
 
+## Updated working recommendation from the user's historical-pattern discussion — PROPOSED
+
+Current direction to evaluate: **a fixed, researched world that evolves into an alternate history, with settlement development, strategic movement and diplomacy, and real-time tactical battles**. The strategic campaign is the primary design target; it should combine a Bannerlord-like political/party layer with Manor Lords/Anno-inspired settlements and economy, and AoE-style real-time battle clarity. A competitive skirmish ruleset remains a possible later mode, not a v1 promise.
+
+Recommended flow: strategic campaign map → local settlement management or strategic orders → mobile party encounters → a dedicated tactical battle/siege when appropriate → casualties, inventory, morale, holdings and relationships written back to the same campaign state. Distinct Godot scenes can share the same persistent state. Do not attempt a seamless continent-to-village-to-battle world as the initial architecture.
+
+The world should start from a **date-specific authored political state**, not merge all factions from 1500–1800 into one ahistorical starting roster. It may diverge from history as the simulation evolves. A smaller vertical slice validates the rules; it does not cancel the long-term map ambition.
+
+The art recommendation to test is stylised, readable 3D with a three-quarter/isometric-like camera, reusable models/rigs, coherent Deccan-inspired architecture, atmospheric lighting and strong combat feedback. This is not locked until a representative visual benchmark is built and reviewed.
+
+See [Recommended game format and AI-assisted production pipeline](18_game_format_and_ai_production_pipeline.md) for the full proposal, staged feature scope, versioned tool recommendations and automation guardrails.
+
 ## Recommendation to evaluate: one simulation foundation, separate rulesets where needed
 
 Do not force a choice between "AoE" and "Bannerlord" before the core loop is tested. A plausible architecture is:
