@@ -28,7 +28,7 @@
 18. [Historical pattern intake: first story draft](design/17_historical_pattern_intake_story_draft_01.md)
 19. [Recommended game format and AI-assisted production pipeline](design/18_game_format_and_ai_production_pipeline.md)
 20. [Campaign progression and feature register](design/19_feature_register_and_campaign_progression.md)
-21. [External Godot RTS resource evaluation](../references/20_external_godot_rts_resources.md)
+21. [External Godot RTS resource evaluation](references/20_external_godot_rts_resources.md)
 
 ## Codex skill pack
 
