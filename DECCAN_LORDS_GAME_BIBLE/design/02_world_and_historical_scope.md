@@ -46,6 +46,12 @@ Every geographical feature should support a real decision. Avoid making every te
 - Current conversation: wider 1600–1700-era Indian setting and a long-range map aspiration.
 - Exact campaign year, political boundaries, named figures, faction roster, settlement roster, and historical/alternate-history boundary are OPEN.
 
+### Preliminary historical narrative received — 17 October 2026
+
+The user supplied an initial narrative draft covering central Deccan, southern India and parts of northern India, mostly c. 1500–1700. It is a pattern-analysis draft, not yet the planned master history spanning c. 1500–1800. Its observations about coalition warfare, changing noble support, strategic forts/routes, economic extraction, campaign costs, merchant networks, succession and local autonomy are valuable design inputs. Some chronology and causal claims need verification; the preliminary claim review and game-design patterns are documented in [Historical pattern intake: first story draft](17_historical_pattern_intake_story_draft_01.md).
+
+Keep the campaign date and faction roster OPEN. Do not make every historical claim a literal game rule or use broad cultural/religious stereotypes as fixed AI behavior. After the master history is supplied, reconcile timelines and relationships before undertaking a larger rewrite of faction data and system rules.
+
 Candidate powers mentioned by the user include Deccan sultanates, Mughal authority, Maratha/Deccan local lords, Siddis, British, Dutch, Portuguese, French, Spanish and Arab-linked trading or political groups. Presence and role must be verified against the selected date and region; do not populate the game just because a power is familiar today.
 
 ## Content tiers — proposal
