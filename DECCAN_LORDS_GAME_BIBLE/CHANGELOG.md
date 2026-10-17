@@ -44,3 +44,11 @@
 - Added a starting-date research note: a 1500–1800 umbrella cannot be treated as one unchanged faction roster; the date affects which powers and relationships exist.
 - Recommended discussing the minute-to-minute player loop before locking mode architecture, exact factions, start holdings or technical build scope.
 - No gameplay mode, start year or release scope is locked.
+
+## v0.6 — 2026-10-17 — Historical-pattern intake and game-format/AI pipeline proposal
+
+- Added a preliminary historical-pattern review of the user's c. 1500–1700 story draft, with initial timeline checks, design opportunities and claims needing verification.
+- Added a proposed fixed-world kingdom sandbox format: Bannerlord-like strategic map and political/party layer, Manor Lords/Anno-inspired settlement/economic simulation, and AoE-style real-time tactical battles.
+- Recommended testing connected strategic, settlement and tactical views against a shared campaign state, rather than building a seamless continent or an empty skirmish map as the entire game.
+- Added a stylised 3D visual benchmark proposal, staged vertical slice, current Godot/Blender baseline, Codex/Ollama local-model option, and optional MCP evaluation with safety and quality gates.
+- Recorded the product format and production pipeline as PROPOSED; exact art direction, scene transitions, start date, map/faction roster and most gameplay formulas remain open.
