@@ -105,20 +105,57 @@ Build the smallest experience that proves the game identity:
 
 Leave advanced contracts, full continent content, every historical faction, deep dynasty, all siege systems, multiplayer, and the complete historical roster out of this first proof unless one is essential to test the core.
 
-### Suggested delivery sequence
+### Suggested delivery sequence — one tested milestone at a time
 
-1. **Environment and repository:** stable tools, project skeleton, version control, automated smoke check.
-2. **Visual/technical benchmark:** terrain, camera, buildings, a handful of animated units, movement/selection/combat, import pipeline, performance capture.
-3. **Simulation foundation:** data-driven definitions, explicit state-changing commands, separate simulation from rendering, deterministic small scenarios and debug logging.
-4. **Core vertical slice:** connect one settlement/economy, one lord relationship, one moving party and one real-time battle.
-5. **Playtest and tune:** test exploits, edge cases, performance, save/reload and user comprehension before expanding.
-6. **Content expansion:** historical locations/factions, settlement variety, merchants, politics, sieges, deeper AI and polish in deliberately chosen increments.
+Keep the end goal ambitious, but never ask Codex to build the entire game in one run. Each milestone should leave the project in a runnable, reviewable state.
 
-Do not commit to a delivery date until this slice has run and been measured.
+**M0 — Repository and engine smoke test**
+- Keep the canonical Game Bible, skills and the eventual `project.godot` in one repository so docs and code do not drift. The current repository can host the game source; consider renaming it from `RTS-Docs` to `DECCAN-LORDS` only when desired, not as a blocker.
+- Open the repository locally in Codex; verify Git status, Godot executable and version.
+- Create/import the smallest Godot project and run a headless editor/project check.
+- Install the local project skills only after `project.godot` exists.
+- Gate: clean import/run, no unexplained errors, commit made.
+
+**M1 — Visual and control benchmark**
+- Build a small Deccan-inspired plateau scene with ground/rocks, foliage, one house/market asset, a wall or small fort, and two or three animated units.
+- Add the chosen three-quarter camera, zoom/pan/rotate only if needed, unit selection, movement orders and one simple interaction.
+- Add basic lighting, shadows, restrained ambient sound, cursor/selection feedback and a small readable HUD.
+- Gate: run the actual scene, capture at least one screenshot during interaction, inspect asset consistency and performance. Review the look before asset volume expands.
+
+**M2 — RTS battle prototype**
+- Add a small set of unit roles, formations/spacing, attack/target rules, health/damage, basic CPU opponent and an end condition. Keep the battlefield bounded.
+- Use deterministic test seeds for reproducible cases and a few variable seeds for robustness.
+- Gate: player can select, move, attack, reposition, retreat/lose a unit and finish/restart a battle. Automated checks cover core state transitions; capture actual gameplay evidence.
+
+**M3 — Settlement/economy prototype**
+- Add one settlement with household groups, job categories, two or three land-suitable production activities, inventory/storehouse, a simple buying/selling or market exchange, taxes/upkeep and prioritised notifications.
+- Prosperity/housing may affect family attraction in later iterations; do not add every household need and a full Anno-like production web at once.
+- Gate: production consumes correct inputs/labour; goods move to/from storage correctly; insufficient inputs stop production; money/goods accounting is consistent; save/load preserves state.
+
+**M4 — Strategic campaign prototype**
+- Add a strategic-map representation, travel between a handful of named locations, one player lord, one superior/rival, one merchant and one mobile party/caravan.
+- Use explainable AI decisions and log why an actor chose an action. Test one trade/escort/raid or diplomacy event.
+- Gate: time passes; the same actor/settlement state persists between views; movement, transfers and relationship consequences are observable; NPCs don't know hidden information without a plausible source.
+
+**M5 — Connect campaign and battle**
+- Enter a tactical fight from a campaign encounter; write casualties, recovery, loot/lost goods, treasury effects, damaged holdings and relationship consequences back into persistent campaign state.
+- Add save/load and basic persistence before adding more entity types.
+- Gate: one complete loop works repeatedly: prepare → move → encounter → fight or avoid → resolve losses/rewards → recover → save/reload with no duplicated or lost state.
+
+**M6 — Polish and content growth**
+- Improve animation timing, formation readability, selection/order feedback, particles/VFX, soundscape, notification hierarchy, camera feel, lighting, materials, onboarding and accessibility.
+- Add historical factions, more settlements/production, deeper politics, merchants, sieges and other systems only after their inputs, outputs and tests are designed.
+- Gate: fresh-eyes review with active-play screenshots, repeatable scenario/bot tests, performance measurements, asset-license audit and explicit known-issues list.
+
+**M7 — Release hardening**
+- Validate clean-machine imports/builds and exports for the selected platform, save migration/backup, input/display edge cases, performance under stress, credits/licences, logs, packaging and recovery.
+- Gate: evidence-backed release checklist and a playable, repeatable loop—not merely a successful compile.
+
+Do not commit to a delivery date until M1/M2 have been built and measured. M0 through M2 should produce a visible playable result before expanding the simulation.
 
 ## 6. Recommended development stack, checked on 17 October 2026
 
-- **Main engine:** Godot 4.7.1 was the latest stable release listed in the official archive on 17 October 2026; Godot 4.8 was still a development build. Re-check the official archive during setup and pin the stable patch selected for the project. Pin a stable patch for the project and revisit only through tested upgrades. Official archive: https://godotengine.org/download/archive/ and release policy: https://docs.godotengine.org/en/stable/about/release_policy.html
+- **Main engine:** Godot 4.7.1 was the latest stable release listed in the official archive on 17 October 2026; Godot 4.8 was still a development build. Re-check the official archive during setup and pin the stable patch selected for the project; upgrade only through a tested change. Official archive: https://godotengine.org/download/archive/ and release policy: https://docs.godotengine.org/en/stable/about/release_policy.html
 - **Gameplay language:** GDScript first, because the project is primarily a Godot gameplay/simulation project. Avoid adding C# or extra frameworks until a measured need justifies it.
 - **3D creation:** Blender 5.2.2 LTS was available from the official Blender site on the check date: https://www.blender.org/download/lts/. Keep reusable source assets organised. Godot recommends glTF 2.0 (.glb/.gltf) as a strong interchange format; direct Blender-source import calls Blender during import and adds a dependency to the project workflow. Reference: https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/available_formats.html
 - **Editor/AI coding:** VS Code plus the Codex IDE extension, signed in to the user's ChatGPT account, or Codex CLI running in the project directory. Codex usage limits depend on the plan and model; a Plus account should not be treated as unlimited. Official guide: https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan
