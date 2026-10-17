@@ -6,6 +6,8 @@ This file exists so the ambitious vision stays visible while implementation proc
 
 ## 1. Player fantasy and campaign progression
 
+**Setting decision:** fictional alternate-history Deccan, not a strict historical reenactment. The player does not need to encounter real historical heroes or follow the Maratha/Shivaji story. Fictional kingdoms and clans may be mixed with broadly inspired imperial powers. Selective research improves believable geography, architecture, economy and military logistics; exhaustive historical verification is not a gate for the RTS prototype. See the vision and decision log for exact boundaries of this decision.
+
 ### Starting point
 
 The player starts as a lord/clan leader who inherits holdings appropriate to the selected date, polity, rank and scenario. Possible holdings include villages, a small fort, a town, a private force, clan property, income rights, obligations, allies, rivals and debts. Every noble does not automatically receive a town, fort and several villages.
