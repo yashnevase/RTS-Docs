@@ -52,3 +52,11 @@
 - Recommended testing connected strategic, settlement and tactical views against a shared campaign state, rather than building a seamless continent or an empty skirmish map as the entire game.
 - Added a stylised 3D visual benchmark proposal, staged vertical slice, current Godot/Blender baseline, Codex/Ollama local-model option, and optional MCP evaluation with safety and quality gates.
 - Recorded the product format and production pipeline as PROPOSED; exact art direction, scene transitions, start date, map/faction roster and most gameplay formulas remain open.
+
+## v0.7 — 2026-10-17 — Format confirmation and Godot skill workflow
+
+- Recorded the high-level format as agreed: fixed date-specific campaign world, strategic map, local settlement management and real-time tactical battles sharing campaign state.
+- Added Godot-native project-local Codex skills for orchestration, gameplay simulation, 3D assets, UI/UX, audio, debugging/profiling and QA/release, plus a safe installer.
+- Adapted the Three.js Game Skills reference's specialist routing, seeded testing, visual evidence and release-gate methodology without importing its Vite/Three.js scaffold.
+- Documented model/effort selection, staged implementation, asset licence hygiene and a reusable one-milestone prompt. Corrected the stable Godot reference to 4.7.1; Blender 5.2.2 LTS was also checked on 2026-10-17.
+- Exact start date, world roster, art benchmark, detailed mechanics, MCP choice and final release scope remain open.
