@@ -28,6 +28,11 @@
 18. [Historical pattern intake: first story draft](design/17_historical_pattern_intake_story_draft_01.md)
 19. [Recommended game format and AI-assisted production pipeline](design/18_game_format_and_ai_production_pipeline.md)
 
+## Codex skill pack
+
+- [Godot-native DECCAN LORDS skills and installation helper](../skills/README.md)
+- [Recommended game format and AI-assisted production pipeline](design/18_game_format_and_ai_production_pipeline.md)
+
 ## Related agent instructions
 
 At repository root, read `AGENTS.md`, `PROJECT_CONTEXT.md`, and `CHATGPT_VSCODE_WORKFLOW.md` before delegating work to Codex.
