@@ -20,7 +20,7 @@ This repository is the design/skills source. Once the Godot game project folder 
 bash scripts/install_deccan_lords_skills.sh /absolute/path/to/the/game-project
 ```
 
-The helper copies the seven skill folders into `.agents/skills/` inside that game project. It requires a real `project.godot` file and refuses to overwrite an existing skill directory. Inspect the skill files before installing and review later updates through Git.
+The helper copies the seven skill folders into `.agents/skills/` into the repository/game-project root `.agents/skills/`. It requires a real `project.godot` file and refuses to overwrite an existing skill directory. Inspect the skill files before installing and review later updates through Git.
 
 Validate the skill manifests and installer in this repository with:
 
