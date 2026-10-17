@@ -1,6 +1,6 @@
 # DECCAN LORDS — Project Context for ChatGPT / Codex
 
-**Last updated:** 2026-10-17 (game format and AI-assisted pipeline proposal)  
+**Last updated:** 2026-10-17 (high-level game format confirmed and Godot skill pipeline)  
 **Phase:** Vision discovery and technology validation. No full production implementation authorized yet.
 
 ## The user's end goal
@@ -75,8 +75,12 @@ Have a long, iterative design conversation. The user will share game details in 
 - `DECCAN_LORDS_GAME_BIBLE/exports/` contains v0.1 snapshots, not authoritative if Markdown changes.
 - `AGENTS.md` describes how coding agents must work.
 
-## Current game-format recommendation — PROPOSED
-The current recommendation is a fixed, date-specific, researched strategic world that evolves through player/CPU decisions, connected settlement/economic simulation, moving parties/lords and real-time tactical battles. Use separate but connected strategic, local-settlement and tactical scenes over the same persistent state as the first architecture candidate; no seamless continent simulation is assumed. A later competitive skirmish mode remains possible but is not a first-release commitment. Stylised readable 3D with a three-quarter/isometric-like camera is the art direction to test, not yet LOCKED. See `DECCAN_LORDS_GAME_BIBLE/design/18_game_format_and_ai_production_pipeline.md`.
+## Current game-format direction — LOCKED at high level
+The user approved a fixed, date-specific, researched strategic world that evolves through player/CPU decisions, connected settlement/economic simulation, moving parties/lords and real-time tactical battles. The high-level flow uses strategic-map, local-settlement and tactical-battle views over the same persistent state; details should be validated in a prototype rather than attempting a seamless continent at the start. A later competitive skirmish mode remains possible but is not a first-release commitment. Stylised readable 3D with a three-quarter/isometric-like camera remains an art-direction recommendation to test, not yet LOCKED. See `DECCAN_LORDS_GAME_BIBLE/design/18_game_format_and_ai_production_pipeline.md`.
+
+## Codex skills and stepwise execution
+
+The `skills/` folder contains a Godot-native project-local suite: director, gameplay simulation, visual assets, UI/UX, audio feedback, debugging/profiling and QA/release. `scripts/install_deccan_lords_skills.sh` copies them into `.agents/skills/` once an actual Godot project exists. The suite adapts workflow/evidence patterns from the Three.js Game Skills reference without its browser scaffold. The production pipeline document defines model/effort tiers, a one-milestone prompt template and QA evidence expectations. The actual Godot project has not yet been initialized, and the installer has not yet been run against a real project.
 
 ## Historical analysis and next design step
 The user supplied a preliminary historical story draft (mostly c. 1500–1700). `DECCAN_LORDS_GAME_BIBLE/design/17_historical_pattern_intake_story_draft_01.md` records the source-based reading, initial chronology checks, design opportunities and claims needing further research. The user intends to prepare a broader master history around c. 1500–1800. Read that master document fully when supplied, then reconcile its timeline and actor relationships against credible sources before making a broad history-driven rewrite of faction profiles, NPC attributes, political institutions or system formulas. In parallel, use the game-format document to guide a small visual/technical benchmark; do not begin a huge content build. Keep the start date, map, art direction and specific formulas open until discussed. Do not turn the user's interpretations into verified history or final game rules without discussion.
