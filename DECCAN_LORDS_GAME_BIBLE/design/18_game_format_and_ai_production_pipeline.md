@@ -257,7 +257,49 @@ Use one coherent asset pipeline: consistent scale/origin/pivot, naming, material
 - **AI overconfidence:** every generated change must be tested, reviewed and reversible. Do not grant a model unrestricted access to credentials or destructive commands.
 - **Scope/quality trade-off:** the goal is a polished game. Feature counts and an elaborate architecture are not substitutes for a fun vertical slice.
 
-## 11. Decisions still needed
+## 11. Reference projects, tutorials and reuse policy
+
+The user supplied these resources for technical learning:
+
+- [ATS Skills — Godot RTS genre skill](https://atskills.one/thedivergentai/godot-genre-rts): evaluate it for useful genre checklists and task decomposition. Inspect exact instructions/tools before adopting them; do not let a third-party skill override the Game Bible.
+- [Godot forum — 3D RTS tutorial series](https://forum.godotengine.org/t/3d-rts-tutorial-series-for-godot/94795): use selectively to understand common RTS implementation subjects such as camera, selection/orders, movement, navigation and unit control. Verify every tutorial against the pinned Godot version and current project architecture.
+- [lampe-games/godot-open-rts](https://github.com/lampe-games/godot-open-rts): inspect as an example project only after checking its default branch, activity, engine version, source layout, dependencies, licence, tests and known issues. Do not wholesale merge it; borrow or port one isolated technique only if it is understood, licensed, compatible and tested.
+- [majidmanzarpour/threejs-game-skills](https://github.com/majidmanzarpour/threejs-game-skills): the specialist-routing/director and evidence-based QA pattern is useful. Its Three.js/Vite/browser scaffold is not the DECCAN LORDS technology stack.
+
+These resources have not been accepted as project dependencies. Before adding any source code, model, texture, animation, audio, MCP or skill: check relevance to the active milestone; source/licence/attribution; maintenance and version compatibility; security/permissions; and whether the dependency is smaller than implementing the needed behaviour ourselves. Use suitable free assets if the exact asset licence allows the planned use and distribution, record them in `CREDITS_AND_LICENSES.md`, and never rip assets from commercial games.
+
+## 12. Industry-style project organisation and code boundaries
+
+The repository root is intended to be the Godot project root, with `project.godot` at this level. Keep the Game Bible, `AGENTS.md`, `PROJECT_CONTEXT.md`, skill definitions and automation scripts in this same Git repository so they remain versioned together.
+
+Recommended initial layout:
+
+```text
+project.godot
+AGENTS.md / PROJECT_CONTEXT.md
+DECCAN_LORDS_GAME_BIBLE/       # canonical design source; don't duplicate
+skills/                        # source skill definitions
+.agents/skills/                # installed Codex skills
+scenes/{app,campaign,settlement,battle,entities,ui}/
+src/{core,campaign,world,economy,politics,units,combat,ai,persistence,ui}/
+resources/{definitions,scenarios}/
+assets/{models,materials,textures,animations,audio,fonts}/
+tests/{unit,integration,scenarios}/
+tools/                         # project-specific automation if needed
+CREDITS_AND_LICENSES.md
+scripts/                       # repo-level install/validation scripts only
+```
+
+Create feature subfolders when the first feature needs them instead of filling the repository with dummy scripts. Use typed GDScript, small cohesive scenes/scripts, stable entity IDs, explicit validated state-changing methods/commands, and data-driven definitions for configurable goods/buildings/units/factions. Keep persistent simulation state separate from rendering/animation and UI. Avoid a giant game manager script, unrelated global autoloads, cyclic dependencies, hard-coded per-faction logic and untested shared mutable state. Document save format/version when persistence is introduced. A future feature should state what state it reads/writes, its normal/boundary/failure cases, how it is tested and how it affects existing systems.
+
+## 13. Player progression and long-session design intent
+
+See the detailed [campaign progression and feature register](19_feature_register_and_campaign_progression.md). The intended career starts with a scenario-appropriate lord/clan inheritance, then offers choices to serve a ruler, complete favours, develop holdings, become a powerful warlord/court actor, change allegiance, support another power, found a kingdom or pursue imperial authority when the world rules provide plausible support/recognition. Companions, trusted nobles and family members may grow into useful administrators/commanders and be given responsibilities where rules permit.
+
+This career is a freedom framework, not a rigid checklist or guarantee that every path is fully implemented in the first release. Long-session appeal should emerge from clear short-, medium- and long-term goals; consequential and readable decisions; independent NPC goals; varied economies/politics; useful delegation; low repetitive micro-management; tactical control that feels good; and credible recovery from setbacks. These qualities must be tested with actual play, not just documented.
+
+
+## 14. Decisions still needed
 
 The recommendation above intentionally leaves these open:
 - Exact campaign start year and the initial historical/alternate-history boundary.
