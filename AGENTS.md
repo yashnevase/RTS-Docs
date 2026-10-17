@@ -8,6 +8,7 @@ Before editing anything, read:
 4. `DECCAN_LORDS_GAME_BIBLE/design/12_decision_log.md`
 5. The specific design/system file related to the task
 6. `DECCAN_LORDS_GAME_BIBLE/design/11_open_questions.md` when a rule is unclear
+7. `DECCAN_LORDS_GAME_BIBLE/design/18_game_format_and_ai_production_pipeline.md` when the task concerns product format, scene flow, art direction, local models, MCP, toolchain or the production roadmap
 
 ## Current collaboration phase
 The project is in **DISCOVERY / PRE-PRODUCTION**. The user is discussing the intended game in ChatGPT and has not yet approved a full production implementation plan. Treat design content as `PROPOSED`, `OPEN`, `RESEARCH`, `DEFERRED`, or `LOCKED` exactly as recorded. Do not silently convert a proposal into a locked rule.
