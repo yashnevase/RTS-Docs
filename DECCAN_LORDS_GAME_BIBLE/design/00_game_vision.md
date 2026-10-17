@@ -6,6 +6,9 @@ A stylized, atmospheric PC strategy sandbox inspired by the approachable resourc
 
 **This is a working pitch, not final marketing copy.**
 
+## High-level product format — agreed
+The primary experience is a fixed, date-specific kingdom campaign that evolves through player and CPU decisions, combining a strategic world map, connected local settlement management and real-time tactical battles over shared persistent campaign state. This is not a pure AoE-style empty skirmish map as the whole game, and it is not a pure Bannerlord clone. Competitive skirmish may be considered later as a separate ruleset. Detailed content, start date, map boundaries, camera/art direction and exact mechanics remain OPEN or PROPOSED as logged.
+
 ## Recommended game format — PROPOSED, not locked
 
 The current recommendation is a **fixed-world kingdom strategy sandbox with real-time tactical battles**, combining settlement development and connected production with political simulation and mobile lords/armies. The map begins from one researched, date-specific political state and then evolves through the player's and CPU's decisions. It is not an empty skirmish map as the entire game, and it is not a promise of a fully seamless continent.
