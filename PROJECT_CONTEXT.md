@@ -1,6 +1,6 @@
 # DECCAN LORDS — Project Context for ChatGPT / Codex
 
-**Last updated:** 2026-10-17 (high-level game format confirmed and Godot skill pipeline)  
+**Last updated:** 2026-10-17 (campaign progression register, external RTS references and M0 setup instructions)
 **Phase:** Vision discovery and technology validation. No full production implementation authorized yet.
 
 ## The user's end goal
@@ -84,3 +84,9 @@ The `skills/` folder contains a Godot-native project-local suite: director, game
 
 ## Historical analysis and next design step
 The user supplied a preliminary historical story draft (mostly c. 1500–1700). `DECCAN_LORDS_GAME_BIBLE/design/17_historical_pattern_intake_story_draft_01.md` records the source-based reading, initial chronology checks, design opportunities and claims needing further research. The user intends to prepare a broader master history around c. 1500–1800. Read that master document fully when supplied, then reconcile its timeline and actor relationships against credible sources before making a broad history-driven rewrite of faction profiles, NPC attributes, political institutions or system formulas. In parallel, use the game-format document to guide a small visual/technical benchmark; do not begin a huge content build. Keep the start date, map, art direction and specific formulas open until discussed. Do not turn the user's interpretations into verified history or final game rules without discussion.
+
+## Next local execution step
+
+The user will open this repository in a dedicated local Codex workspace with suitable permissions. Start with [M0_BOOTSTRAP_PROMPT.md](M0_BOOTSTRAP_PROMPT.md): inspect current files and tools; install official stable Godot and Blender only if missing; treat Ollama as optional until the engine/asset smoke test works; create/validate `project.godot` at repository root; install the project skills; run the headless/import checks; stop and report M0 before starting M1. Do not assume browser ChatGPT itself can install software or access the Mac.
+
+The expanded progression inventory is in `DECCAN_LORDS_GAME_BIBLE/design/19_feature_register_and_campaign_progression.md`. The user’s long-term vision includes a lord-to-king/empire career, family/clan/companions and delegated administration, settlement development, production/warehouse/trade/credit, political relations, parties/armies, wages/patrols/fortifications, RTS battles/sieges, and intelligence/events. These are preserved as proposed long-term features, not all promised for the first playable slice.
