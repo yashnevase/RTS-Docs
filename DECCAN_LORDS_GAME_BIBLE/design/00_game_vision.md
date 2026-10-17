@@ -15,6 +15,12 @@ The current recommendation is a **fixed-world kingdom strategy sandbox with real
 
 Use Age of Empires for readable RTS commands and satisfying battles; Manor Lords for inhabited settlements and labour; Anno 1800 for connected goods/market/logistics ideas adapted to the chosen historical period; and Bannerlord for moving parties, independent lords, shifting relationships and political freedom. The intended result is one coherent game, not four modes glued together. See [game format and AI-assisted production pipeline](18_game_format_and_ai_production_pipeline.md) for the full recommendation, scene flow, vertical slice and setup plan.
 
+## Historical inspiration versus historical accuracy — agreed direction
+
+DECCAN LORDS is a **fictional alternate-history strategy game inspired by the Deccan and neighbouring powers**, not a strict historical simulator or a reenactment of specific rulers. We do not need to include Shivaji, Maratha history or exact real-person biographies as mandatory content. The design may use fictional Deccan kingdoms, dynasties, clans, rulers, towns and named characters alongside broad inspirations such as Mughal-style imperial power and other regional/overseas powers. Exact names, number of kingdoms, borders and start year remain to be designed.
+
+The target is historical flavour and internal plausibility, not exhaustive historical accuracy. Use real-world research selectively for terrain, climate, architecture, trade patterns, military logistics, social institutions and material culture where it makes the world more convincing or the gameplay clearer. Mark invented people, factions and alternate outcomes as fiction; don't spend months reconstructing every real historical relationship before prototyping the RTS. Never present invented events as facts about real history.
+
 ## Player fantasy
 
 “I inherited a fragile position in a living, politically complicated world. My choices help determine whether my family survives, my people prosper, my neighbors become allies or enemies, and whether I remain a vassal or rise to rule.”
