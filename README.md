@@ -16,7 +16,7 @@ DECCAN LORDS is a stylised, historically inspired Deccan/Indian kingdom strategy
 
 - [M0 local bootstrap prompt](M0_BOOTSTRAP_PROMPT.md) — gives Codex explicit instructions for tool checks, a professional Godot folder structure and the first smoke test.
 - [Campaign progression and feature register](DECCAN_LORDS_GAME_BIBLE/design/19_feature_register_and_campaign_progression.md) — preserves the lord-to-king/empire journey and long-term features separately from the first playable slice.
-- [External Godot RTS references and reuse rules](references/20_external_godot_rts_resources.md) — describes how to assess tutorials/reference repositories without blindly importing their architecture.
+- [External Godot RTS references and reuse rules](DECCAN_LORDS_GAME_BIBLE/references/20_external_godot_rts_resources.md) — describes how to assess tutorials/reference repositories without blindly importing their architecture.
 
 ## Current phase
 
