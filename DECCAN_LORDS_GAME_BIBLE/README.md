@@ -25,6 +25,7 @@
 15. [Core gameplay loop: competitive RTS vs kingdom sandbox](design/15_core_loop_and_competitive_sandbox.md)
 16. [Jev and agent-harness research](references/15_jev_harness_research.md)
 17. [Connected economy, noble service, merchant networks and military recovery](design/16_connected_economy_politics_and_ai.md)
+18. [Historical pattern intake: first story draft](design/17_historical_pattern_intake_story_draft_01.md)
 
 ## Related agent instructions
 
