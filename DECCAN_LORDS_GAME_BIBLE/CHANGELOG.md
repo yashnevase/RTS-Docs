@@ -57,6 +57,7 @@
 
 - Recorded the high-level format as agreed: fixed date-specific campaign world, strategic map, local settlement management and real-time tactical battles sharing campaign state.
 - Added Godot-native project-local Codex skills for orchestration, gameplay simulation, 3D assets, UI/UX, audio, debugging/profiling and QA/release, plus a safe installer.
+- Added a validator for the seven skill manifests and safe project-local installer, with a GitHub Actions gate covering shell syntax, fresh install and no-overwrite behavior.
 - Adapted the Three.js Game Skills reference's specialist routing, seeded testing, visual evidence and release-gate methodology without importing its Vite/Three.js scaffold.
 - Documented model/effort selection, staged implementation, asset licence hygiene and a reusable one-milestone prompt. Corrected the stable Godot reference to 4.7.1; Blender 5.2.2 LTS was also checked on 2026-10-17.
 - Exact start date, world roster, art benchmark, detailed mechanics, MCP choice and final release scope remain open.
