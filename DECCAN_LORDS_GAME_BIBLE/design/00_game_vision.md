@@ -6,6 +6,12 @@ A stylized, atmospheric PC strategy sandbox inspired by the approachable resourc
 
 **This is a working pitch, not final marketing copy.**
 
+## Recommended game format — PROPOSED, not locked
+
+The current recommendation is a **fixed-world kingdom strategy sandbox with real-time tactical battles**, combining settlement development and connected production with political simulation and mobile lords/armies. The map begins from one researched, date-specific political state and then evolves through the player's and CPU's decisions. It is not an empty skirmish map as the entire game, and it is not a promise of a fully seamless continent.
+
+Use Age of Empires for readable RTS commands and satisfying battles; Manor Lords for inhabited settlements and labour; Anno 1800 for connected goods/market/logistics ideas adapted to the chosen historical period; and Bannerlord for moving parties, independent lords, shifting relationships and political freedom. The intended result is one coherent game, not four modes glued together. See [game format and AI-assisted production pipeline](18_game_format_and_ai_production_pipeline.md) for the full recommendation, scene flow, vertical slice and setup plan.
+
 ## Player fantasy
 
 “I inherited a fragile position in a living, politically complicated world. My choices help determine whether my family survives, my people prosper, my neighbors become allies or enemies, and whether I remain a vassal or rise to rule.”
