@@ -6,6 +6,10 @@
 
 Godot officially supports native macOS development and Windows desktop exporting. Reference: [Godot Windows export documentation](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_windows.html) and [Godot platform FAQ](https://docs.godotengine.org/en/stable/about/faq.html).
 
+## Game format and agent workflow proposal
+
+The full recommendation for the fixed-world kingdom sandbox, connected strategic/local/tactical views, visual benchmark, staged vertical slice, current tool versions, local-model/MCP options and quality gates is documented in [Recommended game format and AI-assisted production pipeline](18_game_format_and_ai_production_pipeline.md). Keep the art direction, camera and scene flow PROPOSED until the representative benchmark is reviewed. The tool recommendations are checked as of 2026-10-17 and must be rechecked at setup.
+
 ## What to do with the existing Three.js prototype
 
 - Keep it in version control as a reference/prototype.
