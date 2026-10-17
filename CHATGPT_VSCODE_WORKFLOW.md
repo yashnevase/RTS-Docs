@@ -21,6 +21,14 @@ This file explains how to make this discussion and the local repository work tog
 7. Optionally configure the OpenAI Developer Docs MCP if you often need current OpenAI/Codex documentation. It is read-only and can be added using `codex mcp add openaiDeveloperDocs --url https://developers.openai.com/mcp`; verify with `codex mcp list`. Documentation: https://developers.openai.com/learn/docs-mcp.
 8. After the first Godot scene runs reliably, evaluate one Godot MCP only if scene inspection, test execution or debugging improves enough to justify the added dependency. Start with minimum permissions and require approval for destructive operations. More tools do not automatically mean better results.
 
+## DECCAN LORDS one-milestone execution
+
+Once the Godot project exists and the local skills are installed, start an implementation task with `deccan-lords-director` and request only the named milestone. The director should load relevant specialists rather than require the user to invoke each role manually.
+
+Use the model/effort table in `DECCAN_LORDS_GAME_BIBLE/design/18_game_format_and_ai_production_pipeline.md`: strongest available model at High for architecture/hard bugs, balanced coding model at Medium for scoped implementation, efficient/local model at Low/Medium for repetitive support work. Reserve Extra High/xhigh for exceptional cross-system audits rather than routine changes.
+
+Each milestone must end with exact tests/checks, screenshot or log evidence where relevant, diff summary, known gaps and one next step. Passing tests does not mean a feature is automatically visually polished or fun.
+
 ## Design sync message template
 
 Copy this into Codex after a design discussion:
