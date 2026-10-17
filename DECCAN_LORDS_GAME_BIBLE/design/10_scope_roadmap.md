@@ -6,11 +6,13 @@ Use Godot for the main build after a small engine validation slice. Do not imple
 
 ## Milestone sequence — provisional
 
+The recommended product flow, vertical slice acceptance criteria and AI-assisted pipeline are expanded in [Recommended game format and AI-assisted production pipeline](18_game_format_and_ai_production_pipeline.md). Treat that document as the current proposal; it is not authorization to implement every long-term feature at once.
+
 ### Stage A — Vision and proof of direction
 - Keep this living bible as the source of truth.
-- Finalize the intended view/camera and broad time/scale model.
-- Build a Godot scene with a small landscape, one settlement, a few buildings, animated units, camera/selection/movement, lighting, ambient sound and a simple combat interaction.
-- Verify the scene imports/exports, runs acceptably on target hardware and provides the desired feel.
+- Prototype the recommended strategic map → settlement view → tactical battle flow, but keep scene transitions versus continuity testable until user review.
+- Build one Godot art/technical benchmark with representative Deccan terrain, a village, a fort/wall, a market building, a few animated people and soldiers, camera/selection/movement, lighting, UI, ambient sound and combat feedback.
+- Verify import/export, performance, iteration speed and visual readability on target hardware before scaling assets or simulation.
 
 ### Stage B — Core vertical slice
 - Playable opening scenario with inherited holdings.
