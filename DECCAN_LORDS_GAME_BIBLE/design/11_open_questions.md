@@ -74,3 +74,10 @@ These are prompts, not a questionnaire the user must answer all at once. Work th
 ## Suggested immediate conversation order
 
 The user has approved a hybrid household/workforce approach as the working baseline. Next, collect historical and tactical examples as the user is ready. In parallel, clarify one concrete noble appointment/revenue example and one merchant-credit scenario. Then define a small representative simulation joining household needs, production, a market/warehouse, a lord's obligation, a mobile party and an NPC reaction. Keep detailed formulas and content counts OPEN until the interactions make sense.
+
+
+## Agreed direction from 2026-10-17 — keep detailed content questions open
+
+- **Historical treatment:** fictional alternate-history Deccan setting, not a strict reenactment. No requirement to feature Shivaji, Maratha history or exact real-person biographies. Invented Deccan kingdoms/clans/leaders may coexist with broadly inspired empires such as a Mughal-style power. Exact names, count, boundaries and chronology still need a focused design pass; do not block the first RTS prototype on them.
+- **Campaign geography:** prefer an authored, persistent strategic map for the main campaign, with named cities, villages, forts, roads, rivers, terrain, factions, characters and relationships represented as data. Exact geography and the eventual map extent are still open. Build one compact, convincing starting region first, then expand using the same data-driven structures. Random/generated maps are an optional later skirmish feature, not the main campaign foundation.
+- **Content versus prototype:** the feature register preserves long-term ambitions, but the first playable proof should demonstrate responsive RTS controls/combat and the beginning of the settlement/campaign connection. Broader map content and detailed systems are added incrementally after the benchmark works.
