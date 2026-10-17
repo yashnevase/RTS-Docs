@@ -1,6 +1,7 @@
 # DECCAN LORDS — Agent Instructions
 
 ## First action: establish context
+Before starting an implementation milestone, also read `M0_BOOTSTRAP_PROMPT.md` for environment/setup tasks, `DECCAN_LORDS_GAME_BIBLE/design/19_feature_register_and_campaign_progression.md` for the long-term feature inventory, and `references/20_external_godot_rts_resources.md` before evaluating external RTS code/tutorials.
 Before editing anything, read:
 1. `PROJECT_CONTEXT.md`
 2. `DECCAN_LORDS_GAME_BIBLE/README.md`
