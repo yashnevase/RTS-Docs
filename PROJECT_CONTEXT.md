@@ -1,6 +1,6 @@
 # DECCAN LORDS — Project Context for ChatGPT / Codex
 
-**Last updated:** 2026-10-16 (connected economy, noble service, credit and recovery sync)  
+**Last updated:** 2026-10-17 (preliminary historical pattern intake)  
 **Phase:** Vision discovery and technology validation. No full production implementation authorized yet.
 
 ## The user's end goal
@@ -76,4 +76,4 @@ Have a long, iterative design conversation. The user will share game details in 
 - `AGENTS.md` describes how coding agents must work.
 
 ## Current next design subject
-The user has approved the hybrid household/workforce approach and the high-level direction that noble service/revenue arrangements vary by kingdom, rank and circumstances and can combine multiple components. Specific historical titles, rights and formulas remain open. Continue collecting the user's historical observations and tactical examples, and design a generic data model that can express different arrangements without hard-coding a separate system for each kingdom. Build the attribute and behavior model from repeated examples, separating verified history, user-provided interpretation, design inference and fictional alternatives. Ask one focused question at a time; do not lock unrelated details.
+The user has supplied a preliminary historical story draft (mostly c. 1500–1700). `DECCAN_LORDS_GAME_BIBLE/design/17_historical_pattern_intake_story_draft_01.md` records the source-based reading, initial chronology checks, design opportunities and claims needing further research. The user intends to prepare a broader master history around c. 1500–1800. Read that master document fully when supplied, then reconcile its timeline and actor relationships against credible sources before making a broad history-driven rewrite of faction profiles, NPC attributes, political institutions or system formulas. Until then, retain the current preliminary pattern analysis, keep the start date and roster OPEN, and ask focused questions only when a design decision is necessary. Do not turn the user's interpretations into verified history or final game rules without discussion.
