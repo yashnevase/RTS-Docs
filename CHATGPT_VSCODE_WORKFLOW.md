@@ -12,14 +12,14 @@ This file explains how to make this discussion and the local repository work tog
 
 ## Setup sequence on the Mac
 
-1. Create a **private GitHub repository** for DECCAN LORDS. Use Git from the beginning; make small commits after accepted changes.
-2. Copy `AGENTS.md`, `PROJECT_CONTEXT.md`, `CHATGPT_VSCODE_WORKFLOW.md`, and the `DECCAN_LORDS_GAME_BIBLE/` folder into the repository root. Commit them as the initial design baseline.
-3. Install VS Code, the official Codex IDE extension, Git, and a stable Godot release. Sign Codex in using the intended ChatGPT Plus account. Open the repository root as the workspace.
-4. In the ChatGPT interface, connect the GitHub app and authorize access only to this repository if the app is available for the account/surface. The ChatGPT GitHub integration is for repository reading/search in supported experiences; use Codex locally for edits. Do not assume GitHub-connected ChatGPT can push commits.
-5. Keep `AGENTS.md` at repo root so Codex sees the project rules. At the start of a task, ask Codex to read `PROJECT_CONTEXT.md`, the Game Bible README, the relevant system page, open questions and decision log.
-6. At the end of a design discussion, ask for a short **design sync summary** containing: confirmed decisions, proposals still open, changed assumptions, research to verify, and which Markdown sections should change. Update the Markdown through an explicitly reviewed edit/patch, then commit.
-7. Commit and push accepted Markdown changes. ChatGPT can then read the committed state through GitHub in supported experiences. Uncommitted local edits won't necessarily be visible through that connection.
-8. After the first Godot test scene exists, consider adding **one** maintained, compatible Godot MCP integration if live scene inspection, running, screenshots or editor manipulation would materially improve the workflow. Pin versions and keep Git diffs/backups. Start with minimum necessary tool permissions; more tools do not automatically mean better output.
+1. Clone the private `yashnevase/RTS-Docs` repository locally and commit design changes in small, reviewable steps.
+2. Install Git, stable Godot, Blender LTS, and either the ChatGPT desktop app with Codex mode or the Codex IDE extension/CLI. Open the local repository as the workspace.
+3. Sign in to Codex with the intended ChatGPT Plus account. If you want a local model inside ChatGPT Desktop's Codex mode, follow Ollama's ChatGPT integration guide and check its required Ollama version. This does not switch ordinary ChatGPT Chat/voice to local inference; only model requests routed through Ollama use the selected Ollama model. Guide: https://docs.ollama.com/integrations/chatgpt. Also test Codex with its native model as a fallback.
+4. First make the smallest Godot project import and run a smoke test from the terminal. Then test Blender export/import with one small `.glb` asset and build a basic visual benchmark. Do not install an MCP server before the basic loop works.
+5. Keep `AGENTS.md` at repository root so Codex reads project rules. At the start of a task, ask it to read `PROJECT_CONTEXT.md`, the Game Bible README, the relevant system page, open questions and decision log.
+6. At the end of a design discussion, ask for a short **design sync summary**: confirmed decisions, proposals still open, assumptions, research to verify and Markdown sections that should change. Review the diff and commit only accepted changes.
+7. Optionally configure the OpenAI Developer Docs MCP if you often need current OpenAI/Codex documentation. It is read-only and can be added using `codex mcp add openaiDeveloperDocs --url https://developers.openai.com/mcp`; verify with `codex mcp list`. Documentation: https://developers.openai.com/learn/docs-mcp.
+8. After the first Godot scene runs reliably, evaluate one Godot MCP only if scene inspection, test execution or debugging improves enough to justify the added dependency. Start with minimum permissions and require approval for destructive operations. More tools do not automatically mean better results.
 
 ## Design sync message template
 
